@@ -32,26 +32,42 @@
 }
 
 .formWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.contactForm {
+  background: rgb(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 30px 50px;
+}
+
+ input, textarea {
+   border: 1px solid #d9d9d9;
+   border-radius: 4px;
+   box-sizing: border-box;
+   padding: 10px;
+   margin: 15px;
+   width: 100%;
+ }
 
 .submitButton {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background: #e30613;
-    color: white;
-    width: 150px;
-    height: 45px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    font-size: 2
-    5px;
-}
-
-#message {
-    
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: #e30613;
+  color: white;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
 }
