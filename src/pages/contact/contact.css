@@ -41,9 +41,17 @@
 .submitButton {
     margin-top: 5px;
     margin-bottom: 5px;
-    background: blue;
+    background: #e30613;
     color: white;
     width: 150px;
-    height: 65px;
+    height: 45px;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 2
+    5px;
+}
+
+#message {
+    
 }

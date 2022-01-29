@@ -1,4 +1,4 @@
-import React, {FormEvent} from "react";
+import React, { FormEvent } from "react";
 
 // import Instagram from "../../assets/images/instagram.png";
 // import Spotify from "../../assets/images/spotify.png";
@@ -12,7 +12,6 @@ import { BsYoutube } from "react-icons/bs";
 import "./contact.css";
 
 export default function Contact() {
-
   return (
     <div className="contactWrapper" id="contactId">
       <h1>Get In Touch</h1>
@@ -23,13 +22,13 @@ export default function Contact() {
         <BsTwitter className="twitter" />
       </div>
       <div className="formWrapper">
-          <form>
-            <div className=""></div>
-            <div className="formGroup">
-
-            </div>
-          </form>
-          <button className="submitButton">Submit</button>
+        <form className="contactForm">
+          {/* <label htmlFor="addName">Name: </label> */}
+          <input id="name" type="text" placeholder="Name" required></input>
+          <input id="email" type="text" placeholder="Email Address" required></input>
+          <textarea id="message" type="text" rows="5" cols="70" placeholder="Message" required></textarea>
+        </form>
+        <button className="submitButton">Submit</button>
       </div>
     </div>
   );
