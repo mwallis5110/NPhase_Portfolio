@@ -30,7 +30,7 @@ export default function Logo() {
           height="300"
           style={{
             marginTop: "55vh",
-            backgroundColor: "rgb(255,255,255,0.3)",
+            backgroundColor: "rgb(255,255,255,0.15)",
           }}
         ></img>
       </div>

@@ -1,0 +1,26 @@
+.cardWrapper {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+
+.card {
+    /* border: 1px solid black; */
+    /* box-shadow: 0 0 10px 5px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* min-width: 28rem; */
+    width: 16rem;
+    height: 40vh;
+}
+
+.headShot {
+    height: 200px;
+    width: 200px;
+}
+

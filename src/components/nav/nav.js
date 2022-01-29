@@ -1,12 +1,14 @@
-import React from "react";
-import {HashLink, NavHashLink} from "react-router-hash-link";
-// import smallLogo from "../../assets/logo/logoCircle.png"
+import React, {useRef} from "react";
 
 import "./nav.css";
 
 export default function PageNav() {
+
   window.onload = function () {
     document.body.topNav += "loaded";
+
+
+
   };
   return (
     <div
@@ -17,7 +19,6 @@ export default function PageNav() {
         position: "absolute",
         textDecoration: "none",
         zIndex: 1,
-        // float: "left",
       }}
     >
       <ul
@@ -27,51 +28,57 @@ export default function PageNav() {
           listStyleType: "none",
         }}
       >
-        <li>
-          <HashLink to="/"></HashLink>
+        <li
+          id="beats"
+          style={{
+            color: "white",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            const anchor = document.querySelector("#beatsId");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+        >
+          Beats
         </li>
-        <li>
-          <HashLink smooth to="/beats"
-            id="beats"
-            style={{
-              color: "white",
-            }}
-          >
-            Beats
-          </HashLink>
+        <li
+          id="services"
+          style={{
+            color: "white",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            const anchor = document.querySelector("#servicesId");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+        >
+          Services
         </li>
-        <li>
-          <HashLink
-            to="/services"
-            id="services"
-            style={{
-              color: "white",
-            }}
-          >
-            Services
-          </HashLink>
+        <li
+          id="about"
+          style={{
+            color: "white",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            const anchor = document.querySelector("#aboutUsId");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+        >
+          About Us
         </li>
-        <li>
-          <HashLink
-           to="/about"
-            id="about"
-            style={{
-              color: "white",
-            }}
-          >
-            About Us
-          </HashLink>
-        </li>
-        <li>
-          <HashLink
-           to="/contact"
-            id="contact"
-            style={{
-              color: "white",
-            }}
-          >
-            Get In Touch
-          </HashLink>
+        <li
+          id="contact"
+          style={{
+            color: "white",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            const anchor = document.querySelector("#contactId");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+        >
+          Get In Touch
         </li>
       </ul>
     </div>

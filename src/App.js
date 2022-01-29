@@ -6,8 +6,7 @@ import NavBar from "./components/nav/nav.js";
 import Logo from "./components/logo/logo.js"
 import Beats from "./pages/beats/beats.js";
 import Services from "./pages/services/services.js";
-import NPhaseBio from "./pages/nPhaseBio/nPhaseBio.js";
-import TeamBio from "./pages/teamBio/teamBio.js";
+import AboutUs from "./pages/aboutUs/aboutUs.js";
 import Contact from "./pages/contact/contact.js";
 
 import LoadingScreen from "./components/loading/loading.js";
@@ -33,8 +32,7 @@ export default function App() {
               <Logo/>
               <Beats/>
               <Services/>
-              <NPhaseBio/>
-              {/* <TeamBio /> */}
+              <AboutUs/>
               <Contact/>
             
           </div>

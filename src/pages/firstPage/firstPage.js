@@ -4,6 +4,7 @@ import React, {useRef, useEffect} from "react";
 import gsap from "gsap";
 
 import MainVid from "../../assets/videos/sample1.mp4";
+import ScrollButton from "../../components/scrollButton/scrollButton.js";
 
 import "./firstPage.css";
 
@@ -48,12 +49,13 @@ export default function FirstPage() {
           height: "100%",
           objectFit: "cover",
           transform: "translate(-50%, -50%)",
-          zIndex: -2,
+          zIndex: -1,
         }}
       >
         <source src={MainVid} type="video/mp4" />
         {/* <MuteButton /> Autoplay works (halleluja). Just needs a mute/unmute button */}
       </video>
+      <ScrollButton />
     </div>
   );
 }

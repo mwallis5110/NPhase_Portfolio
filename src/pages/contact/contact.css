@@ -1,0 +1,49 @@
+.contactWrapper {
+  background-color: #36454f;
+  justify-content: center;
+}
+
+.instagram {
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+  margin-right: 95px;
+}
+
+.spotify {
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.youtube {
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.twitter {
+  width: 60px;
+  height: 60px;
+  margin-right: 60px;
+  margin-left: 95px;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: blue;
+    color: white;
+    width: 150px;
+    height: 65px;
+    cursor: pointer;
+}

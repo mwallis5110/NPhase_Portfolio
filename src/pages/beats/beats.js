@@ -34,7 +34,7 @@ export default function Beats() {
     setDuration(seconds);
     progressBar.current.max = seconds;
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
-  
+
 
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs / 60);
@@ -77,10 +77,10 @@ export default function Beats() {
   };
 
   return (
-    <div>
+    <div id="beatsId">
       <h1>Beats</h1>
-      <thead>
-        <tr className="headers">
+      <thead className="headers" >
+        <tr>
           <th>Title</th>
           <th>Artist</th>
           <th>Listen</th>
@@ -89,8 +89,39 @@ export default function Beats() {
         </tr>
       </thead>
       <tr className="audioPlayer">
-        <audio ref={audioPlayer} src={Track1} preload="metadata" 
-        // onLoadedMetadata={onLoadedMetadata} 
+        <audio
+          ref={audioPlayer}
+          src={Track1}
+          preload="metadata"
+          // onLoadedMetadata={onLoadedMetadata}
+        />
+        <button className="playPauseButton" onClick={togglePlayPause}>
+          {isPlaying ? <FaPause /> : <FaPlay />}
+        </button>
+
+        {/* Current Time  */}
+        <div>{calculateTime(currentTime)}</div>
+
+        {/* Progress Bar */}
+        <div>
+          <input
+            type="range"
+            className="progressBar"
+            defaultValue="0"
+            ref={progressBar}
+            onChange={changeRange}
+          />
+        </div>
+
+        {/* Duration */}
+        <div>{duration && !isNaN(duration) && calculateTime(duration)}</div>
+      </tr>
+      <tr className="audioPlayer">
+        <audio
+          ref={audioPlayer}
+          src={Track2}
+          preload="metadata"
+          // onLoadedMetadata={onLoadedMetadata}
         />
         <button className="playPauseButton" onClick={togglePlayPause}>
           {isPlaying ? <FaPause /> : <FaPlay />}
