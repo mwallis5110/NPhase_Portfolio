@@ -10,7 +10,7 @@
 }
 
 .contactWrapper {
-  background-color: #36454f;
+  background-color: black;
   justify-content: center;
   padding-top: 10px;
   height: 100vh;
@@ -19,38 +19,43 @@
 .contactTitle {
   font-family: Flange BQ Italic;
   font-size: 60px;
+  color: #e30613;
 }
 
 .instagram {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   margin-left: 60px;
   margin-right: 95px;
   cursor: pointer;
+  color: #e30613;
 }
 
 .spotify {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   margin-left: 60px;
   margin-right: 60px;
   cursor: pointer;
+  color: #e30613;
 }
 
 .youtube {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   margin-left: 60px;
   margin-right: 60px;
   cursor: pointer;
+  color: #e30613;
 }
 
 .twitter {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   margin-right: 60px;
   margin-left: 95px;
   cursor: pointer;
+  color: #e30613;
 }
 
 .formWrapper {

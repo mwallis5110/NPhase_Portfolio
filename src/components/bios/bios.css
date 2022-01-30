@@ -10,10 +10,10 @@
 
 .cardWrapper {
     margin: 2rem;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
-    justify-content:space-between;
+    justify-content:space-evenly;
     margin-top: 50px;
 }
 
@@ -22,8 +22,8 @@
     /* box-shadow: 0 0 10px 5px; */
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     /* min-width: 28rem; */
     width: 16rem;
     height: 40vh;
