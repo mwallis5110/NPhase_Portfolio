@@ -8,6 +8,16 @@
   }
 }
 
+@font-face {
+    font-family: Flange BQ Italic;
+    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+}
+
+@font-face {
+  font-family: Nexa Bold;
+  src: url("../../assets/fonts/Nexa\ Bold.otf");
+}
+
 .topNav {
     margin-top: 30px;
     padding: 0px !important;
@@ -37,7 +47,7 @@ li {
     padding-right: 30px;
     text-decoration: none;
     display: inline-block;
-    /* float: left; */
+    font-family: Flange BQ Italic;
 }
 
 #beats:hover, #services:hover, #about:hover, #contact:hover {

@@ -1,6 +1,11 @@
+
+
+
 .contactWrapper {
   background-color: #36454f;
   justify-content: center;
+  padding-top: 10px;
+  height: 100vh;
 }
 
 .instagram {
@@ -8,6 +13,7 @@
   height: 60px;
   margin-left: 60px;
   margin-right: 95px;
+  cursor: pointer;
 }
 
 .spotify {
@@ -15,6 +21,7 @@
   height: 60px;
   margin-left: 60px;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .youtube {
@@ -22,6 +29,7 @@
   height: 60px;
   margin-left: 60px;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .twitter {
@@ -29,6 +37,7 @@
   height: 60px;
   margin-right: 60px;
   margin-left: 95px;
+  cursor: pointer;
 }
 
 .formWrapper {

@@ -1,0 +1,10 @@
+.firstPageWrapper {
+    margin-bottom: 80px;
+}
+
+.logoWrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -670px;
+}

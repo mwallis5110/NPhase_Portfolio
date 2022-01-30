@@ -3,7 +3,6 @@ import React, { useState, useEffect} from "react";
 
 import FirstPage from "./pages/firstPage/firstPage.js";
 import NavBar from "./components/nav/nav.js";
-import Logo from "./components/logo/logo.js"
 import Beats from "./pages/beats/beats.js";
 import Services from "./pages/services/services.js";
 import AboutUs from "./pages/aboutUs/aboutUs.js";
@@ -29,7 +28,6 @@ export default function App() {
             <NavBar />
             
               <FirstPage/>
-              <Logo/>
               <Beats/>
               <Services/>
               <AboutUs/>

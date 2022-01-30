@@ -16,6 +16,7 @@ export default function Logo() {
     return (
       <div
         style={{
+          position: "relative",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -26,11 +27,13 @@ export default function Logo() {
           //   ref={imgRef}
           src={mainLogo}
           alt="main logo"
-          width="300"
-          height="300"
+          width="400"
+          height="400"
           style={{
-            marginTop: "55vh",
-            backgroundColor: "rgb(255,255,255,0.15)",
+            marginTop: "25vh",
+            // backgroundColor: "rgb(255,255,255,0.15)",
+            opacity: 0.6,
+            zIndex: 2
           }}
         ></img>
       </div>
