@@ -31,7 +31,7 @@ export default function Logo() {
           height="400"
           style={{
             marginTop: "25vh",
-            backgroundColor: "rgb(255,255,255,0.04)",
+            backgroundColor: "rgb(255,255,255,0.1)",
             borderRadius: "10px",
             // opacity: 0.9,
             zIndex: 2

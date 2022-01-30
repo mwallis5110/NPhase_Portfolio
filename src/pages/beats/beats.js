@@ -19,6 +19,80 @@ import { FaPlay, FaPause } from "react-icons/fa";
 import "./beats.css";
 
 export default function Beats() {
+  //Data for each track
+  const tracksData = [
+    {
+      id: 1,
+      title: "Track 1",
+      artist: "John Smith",
+      track: Track1,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 2",
+      artist: "John Smith",
+      track: Track2,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 3",
+      artist: "John Smith",
+      track: Track3,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 4",
+      artist: "John Smith",
+      track: Track4,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 5",
+      artist: "John Smith",
+      track: Track5,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 6",
+      artist: "John Smith",
+      track: Track6,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 7",
+      artist: "John Smith",
+      track: Track7,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 8",
+      artist: "John Smith",
+      track: Track8,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 9",
+      artist: "John Smith",
+      track: Track9,
+      price: "$29.99",
+    },
+    {
+      id: 1,
+      title: "Track 10",
+      artist: "John Smith",
+      track: Track10,
+      price: "$29.99",
+    },
+  ];
+
   //State
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -34,7 +108,6 @@ export default function Beats() {
     setDuration(seconds);
     progressBar.current.max = seconds;
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
-
 
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs / 60);
@@ -77,78 +150,58 @@ export default function Beats() {
   };
 
   return (
-    <div className="beatsWrapper">
-      <h1 className="beatsTitle">Beats</h1>
-      <thead className="headers" >
-        <tr>
-          <th>Title</th>
-          <th>Artist</th>
-          <th>Listen</th>
-          <th>Purchase</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tr className="audioPlayer">
-        <audio
-          ref={audioPlayer}
-          src={Track1}
-          preload="metadata"
-          // onLoadedMetadata={onLoadedMetadata}
-        />
-        <button className="playPauseButton" onClick={togglePlayPause}>
-          {isPlaying ? <FaPause /> : <FaPlay />}
-        </button>
-
-        {/* Current Time  */}
-        <div>{calculateTime(currentTime)}</div>
-
-        {/* Progress Bar */}
-        <div>
-          <input
-            type="range"
-            className="progressBar"
-            defaultValue="0"
-            ref={progressBar}
-            onChange={changeRange}
-          />
+    <div className="beatsSection">
+      <h1 className="beatsTitle" id="beatsId">
+        Beats
+      </h1>
+      <div className="trackWrapper">
+        <div className="headers">
+          <h5 className="titleHeader">Title</h5>
+          <h5 className="artistHeader">Artist</h5>
+          <h5 className="listenHeader">Listen</h5>
+          <h5 className="priceHeader">Price</h5>
         </div>
+        <div className="allTracks">
+          {tracksData.map((track) => {
+            return (
+              <div className="eachTrackWrapper">
+                <div className="trackTitle">{track.title}</div>
+                <div className="trackArtist">{track.artist}</div>
+                <div className="audioPlayer">
+                  <audio
+                    ref={audioPlayer}
+                    src={track.track}
+                    preload="metadata"
+                  />
+                  <button className="playPauseButton" onClick={togglePlayPause}>
+                    {isPlaying ? <FaPause /> : <FaPlay />}
+                  </button>
 
-        {/* Duration */}
-        <div>{duration && !isNaN(duration) && calculateTime(duration)}</div>
-      </tr>
-      <tr className="audioPlayer">
-        <audio
-          ref={audioPlayer}
-          src={Track2}
-          preload="metadata"
-          // onLoadedMetadata={onLoadedMetadata}
-        />
-        <button className="playPauseButton" onClick={togglePlayPause}>
-          {isPlaying ? <FaPause /> : <FaPlay />}
-        </button>
+                  {/* Current Time  */}
+                  <div>{calculateTime(currentTime)}</div>
 
-        {/* Current Time  */}
-        <div>{calculateTime(currentTime)}</div>
+                  {/* Progress Bar */}
+                  <div>
+                    <input
+                      type="range"
+                      className="progressBar"
+                      defaultValue="0"
+                      ref={progressBar}
+                      onChange={changeRange}
+                    />
+                  </div>
 
-        {/* Progress Bar */}
-        <div>
-          <input
-            type="range"
-            className="progressBar"
-            defaultValue="0"
-            ref={progressBar}
-            onChange={changeRange}
-          />
+                  {/* Duration */}
+                  <div>
+                    {duration && !isNaN(duration) && calculateTime(duration)}
+                  </div>
+                  <div class="trackPrice">{track.price}</div>
+                </div>
+              </div>
+            );
+          })}
         </div>
-
-        {/* Duration */}
-        <div>{duration && !isNaN(duration) && calculateTime(duration)}</div>
-      </tr>
-      {/* Main div */}
-      {/* A table would probably be easiest to structure beats */}
-      {/* For now, just get this part to play/pause/etc beats. Worry about the waveform part later.  */}
-      {/* Check out that custom video player youtube video for this part */}
-      {/* TODO: Check out a css course devoted to just positioning. Take notes */}
+      </div>
     </div>
   );
 }
