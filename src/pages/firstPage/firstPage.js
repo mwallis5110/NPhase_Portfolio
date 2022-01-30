@@ -53,7 +53,6 @@ export default function FirstPage() {
           }}
         >
           <source src={MainVid} type="video/mp4" />
-          {/* <MuteButton /> Autoplay works (halleluja). Just needs a mute/unmute button */}
         </video>
         <div className="logoWrapper">
           <Logo />

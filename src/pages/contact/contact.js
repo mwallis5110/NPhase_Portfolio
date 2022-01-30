@@ -14,7 +14,7 @@ import "./contact.css";
 export default function Contact() {
   return (
     <div className="contactWrapper" id="contactId">
-      <h1>Get In Touch</h1>
+      <h1 className="contactTitle">Get In Touch</h1>
       <div className="socialMedia">
         <BsInstagram className="instagram" />
         <BsSpotify className="spotify" />

@@ -1,6 +1,20 @@
+@font-face {
+    font-family: Flange BQ Italic;
+    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+}
+
+@font-face {
+  font-family: Nexa Bold;
+  src: url("../../assets/fonts/Nexa\ Bold.otf");
+}
+
 .companyBioWrapper {
     text-align: center;
     margin-top: 40px;
+}
+.nPhaseTitle {
+    font-family: Flange BQ Italic;
+    font-size: 60px;
 }
 
 .aboutText {
@@ -8,4 +22,5 @@
     margin-right: 70px;
     margin-top: 40px;
     margin-bottom: 50px;
+    font-family: Nexa Bold;
 }

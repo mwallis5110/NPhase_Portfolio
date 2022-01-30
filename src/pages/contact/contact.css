@@ -1,11 +1,24 @@
 
+@font-face {
+    font-family: Flange BQ Italic;
+    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+}
 
+@font-face {
+  font-family: Nexa Bold;
+  src: url("../../assets/fonts/Nexa\ Bold.otf");
+}
 
 .contactWrapper {
   background-color: #36454f;
   justify-content: center;
   padding-top: 10px;
   height: 100vh;
+}
+
+.contactTitle {
+  font-family: Flange BQ Italic;
+  font-size: 60px;
 }
 
 .instagram {
@@ -79,4 +92,5 @@
   border: none;
   border-radius: 10px;
   font-size: 25px;
+  font-family: Nexa Bold;
 }

@@ -1,11 +1,18 @@
+@font-face {
+    font-family: Flange BQ Italic;
+    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+}
+
+@font-face {
+  font-family: Nexa Bold;
+  src: url("../../assets/fonts/Nexa\ Bold.otf");
+}
+
 .aboutUsWrapper {
     height: 100vh;
 }
 
-.biosAnimation {
-
-}
-
-.companyBiosAnimation {
-    
+.teamTitle {
+    font-family: Flange BQ Italic;
+    font-size: 60px;
 }

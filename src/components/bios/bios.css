@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Flange BQ Italic;
+    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+}
+
+@font-face {
+  font-family: Nexa Bold;
+  src: url("../../assets/fonts/Nexa\ Bold.otf");
+}
+
 .cardWrapper {
     margin: 2rem;
     display: grid;
@@ -17,6 +27,7 @@
     /* min-width: 28rem; */
     width: 16rem;
     height: 40vh;
+    font-family: Nexa Bold;
 }
 
 .headShot {

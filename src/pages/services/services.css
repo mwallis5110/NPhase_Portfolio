@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Flange BQ Italic;
+    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+}
+
+@font-face {
+  font-family: Nexa Bold;
+  src: url("../../assets/fonts/Nexa\ Bold.otf");
+}
+
 .slideShow {
   border-top: 1px solid black;
+  font-family: Flange BQ Italic;
+  font-size: 30px;
 }

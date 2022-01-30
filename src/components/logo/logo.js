@@ -32,7 +32,7 @@ export default function Logo() {
           style={{
             marginTop: "25vh",
             // backgroundColor: "rgb(255,255,255,0.15)",
-            opacity: 0.6,
+            opacity: 0.7,
             zIndex: 2
           }}
         ></img>

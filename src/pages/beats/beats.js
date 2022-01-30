@@ -77,8 +77,8 @@ export default function Beats() {
   };
 
   return (
-    <div id="beatsId">
-      <h1>Beats</h1>
+    <div className="beatsWrapper">
+      <h1 className="beatsTitle">Beats</h1>
       <thead className="headers" >
         <tr>
           <th>Title</th>
