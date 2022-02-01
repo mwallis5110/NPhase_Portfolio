@@ -29,8 +29,8 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
     },
     {
       img: General,
-      alt: "General services",
-      title: "General Services",
+      alt: "Production services",
+      title: "Production",
       subtitle:
         "Integer tincidunt lectus leo, vitae congue lacus ullamcorper quis. Sed.",
     },

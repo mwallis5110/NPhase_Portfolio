@@ -2,7 +2,6 @@ import React, { useState, useEffect} from "react";
 // import { gsap } from "gsap";
 
 import FirstPage from "./pages/firstPage/firstPage.js";
-import NavBar from "./components/nav/nav.js";
 import Beats from "./pages/beats/beats.js";
 import Services from "./pages/services/services.js";
 import AboutUs from "./pages/aboutUs/aboutUs.js";
@@ -22,11 +21,9 @@ export default function App() {
 
   return (
     <>
-      {loading === false ? (
+      {/* {loading === false ? ( */}
           <div className="App">
-            {/* <FirstPage /> */}
-            <NavBar />
-            
+            {/* <FirstPage /> */} 
               <FirstPage/>
               <Beats/>
               <Services/>
@@ -34,9 +31,9 @@ export default function App() {
               <Contact/>
             
           </div>
-      ) : (
+      {/* ) : (
         <LoadingScreen />
-      )}
+      )} */}
     </>
   );
 }

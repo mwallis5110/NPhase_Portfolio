@@ -4,6 +4,7 @@ import Logo from "../../components/logo/logo.js"
 
 import gsap from "gsap";
 
+import Navbar from "../../components/nav/nav.js";
 import MainVid from "../../assets/videos/sample1.mp4";
 import ScrollButton from "../../components/scrollButton/scrollButton.js";
 
@@ -36,6 +37,9 @@ export default function FirstPage() {
   return (
     <div className="firstPageWrapper">
       <div className="firstPageVid" ref={firstPageRef}>
+        <div id="navBar">
+          <Navbar />
+        </div>
         <video
           id="firstVideo"
           // autoPlay
@@ -44,12 +48,8 @@ export default function FirstPage() {
           style={{
             position: "relative",
             width: "100%",
-            // left: "50%",
-            // top: "50%",
             height: "100vh",
             objectFit: "cover",
-            // transform: "translate(-50%, -50%)",
-            zIndex: -1,
           }}
         >
           <source src={MainVid} type="video/mp4" />

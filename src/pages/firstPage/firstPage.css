@@ -2,6 +2,10 @@
     margin-bottom: 80px;
 }
 
+.navBar {
+    margin-top: 25px;
+}
+
 .logoWrapper { 
     display: flex;
     align-items: center;
