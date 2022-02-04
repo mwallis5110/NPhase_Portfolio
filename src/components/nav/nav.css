@@ -6,7 +6,6 @@
 .navBar {
   width: 100%;
   position: absolute;
-  left: -20px;
   display: flex;
   text-decoration: "none";
   z-index: 2;
@@ -22,7 +21,6 @@
 
 .navLogo {
   position: absolute;
-  left: 10px;
   width: 40px;
   height: 40px;
 }
@@ -40,8 +38,8 @@
 .about,
 .contact {
   padding-top: 25px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
   display: inline-block;
   font-family: Flange BQ Italic;
   color: white;
@@ -55,37 +53,4 @@
   background: linear-gradient(to bottom, #e30613 0%, transparent 100%);
   padding-top: 35px;
   padding-bottom: 20px;
-}
-
-.rightSide {
-  margin-top: 10px;
-  margin-left: auto;
-}
-
-.instagramNav {
-  width: 40px;
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  cursor: pointer;
-  color: #e30613;
-}
-
-.iTunesNav {
-  width: 40px;
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  cursor: pointer;
-  color: #e30613;
-}
-
-.twitterNav {
-  width: 40px;
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  cursor: pointer;
-  color: #e30613;
-  padding-right: 30px;
 }

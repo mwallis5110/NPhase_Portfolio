@@ -1,14 +1,4 @@
-/* .mainLogoDiv {
-  position: "absolute";
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
-  top: 500px;
-  z-index: 2;
-} */
-
 .mainLogo {
-  /* margin-top: "25vh"; */
   position: absolute;
   top: 250px;
   background-color: "rgb(255,255,255, 0.2)";

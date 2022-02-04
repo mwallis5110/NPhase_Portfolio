@@ -1,9 +1,6 @@
 import React from "react";
 
 import NavLogo from "../../assets/logo/logoCircle.png";
-import {SiItunes} from "react-icons/si"
-import { BsTwitter } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
 
 import "./nav.css";
 
@@ -50,11 +47,6 @@ export default function PageNav() {
             Get In Touch
           </li>
         </ul>
-      </div>
-      <div className="rightSide">
-        <SiItunes className="iTunesNav" />
-        <BsInstagram className="instagramNav" />
-        <BsTwitter className="twitterNav" />
       </div>
     </div>
   );

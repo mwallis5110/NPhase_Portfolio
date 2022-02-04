@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
+import { SiItunes } from "react-icons/si";
+import { BsTwitter } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 import Logo from "../../components/logo/logo.js";
-
-import gsap from "gsap";
-
 import Navbar from "../../components/nav/nav.js";
 import MainVid from "../../assets/videos/sample1.mp4";
 import ScrollButton from "../../components/scrollButton/scrollButton.js";
@@ -11,16 +11,6 @@ import ScrollButton from "../../components/scrollButton/scrollButton.js";
 import "./firstPage.css";
 
 export default function FirstPage() {
-  const firstPageRef = useRef();
-
-  useEffect(() => {
-    gsap.fromTo(
-      firstPageRef.current,
-      { opacity: "0" },
-      { duration: "1", opacity: "1" }
-    );
-  });
-
   const startVideo = async () => {
     const video = document.querySelector("#firstVideo");
 
@@ -30,17 +20,22 @@ export default function FirstPage() {
       video.setAttribute("autoplay", true);
     } catch (err) {
       console.log(err, "video play error");
-      // do stuff in case your video is unavailable to play/autoplay
+      // does stuff in case video is unavailable to play/autoplay
     }
   };
 
-  setTimeout(startVideo, 500);
+  setTimeout(startVideo, 1500);
 
   return (
-    <div className="firstPageWrapper">
-      <div className="firstPageVid" ref={firstPageRef}>
+      <div className="firstPageVid">
         <Navbar />
-        <video className="firstVideo" loop muted>
+        <div className="rightSide">
+          {/* Cursor: pointer needs to be working */}
+          <SiItunes className="iTunesNav" />
+          <BsInstagram className="instagramNav" />
+          <BsTwitter className="twitterNav" />
+        </div>
+        <video className="firstVideo" autoPlay loop muted>
           <source src={MainVid} type="video/mp4" />
         </video>
         <div className="logoWrapper">
@@ -48,6 +43,5 @@ export default function FirstPage() {
         </div>
         <ScrollButton />
       </div>
-    </div>
   );
 }

@@ -1,3 +1,30 @@
+/* Nav bar transition */
+@keyframes nav-slide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Page fade-in transition */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        /* transform: rotate */
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.firstPageVid {
+    animation: fade-in 600ms ease-in;
+}
+
 .firstVideo {
   width: 100%;
   height: 100vh;
@@ -6,10 +33,48 @@
 
 .navBar {
   margin-top: 25px;
+  animation: nav-slide 700ms linear;
 }
 
 .logoWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(255,255,255, 0.2);
+}
+
+.rightSide {
+    position: absolute;
+  top: 25px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.instagramNav {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  color: #e30613;
+  z-index: 3;
+}
+
+.iTunesNav {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  color: #e30613;
+}
+
+.twitterNav {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  color: #e30613;
+  padding-right: 30px;
 }

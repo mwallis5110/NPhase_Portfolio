@@ -21,9 +21,8 @@ export default function App() {
 
   return (
     <>
-      {/* {loading === false ? ( */}
+      {loading === false ? (
           <div className="App">
-            {/* <FirstPage /> */} 
               <FirstPage/>
               <Beats/>
               <Services/>
@@ -31,9 +30,9 @@ export default function App() {
               <Contact/>
             
           </div>
-      {/* ) : (
+       ) : (
         <LoadingScreen />
-      )} */}
+      )} 
     </>
   );
 }
