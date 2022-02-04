@@ -1,22 +1,20 @@
-import React, { useRef } from "react";
+import React from "react";
 
+import NavLogo from "../../assets/logo/logoCircle.png";
+import {SiItunes} from "react-icons/si"
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { BsSpotify } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
 
 import "./nav.css";
 
 export default function PageNav() {
-  window.onload = function () {
-    document.body.topNav += "loaded";
-  };
   return (
     <div className="navBar">
       <div className="leftSide">
+        <img className="navLogo" src={NavLogo} alt="small logo" />
         <ul className="links">
           <li
-            id="beats"
+            className="beats"
             onClick={() => {
               const anchor = document.querySelector("#beatsId");
               anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -25,7 +23,7 @@ export default function PageNav() {
             Beats
           </li>
           <li
-            id="services"
+            className="services"
             onClick={() => {
               const anchor = document.querySelector("#servicesId");
               anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -34,7 +32,7 @@ export default function PageNav() {
             Services
           </li>
           <li
-            id="about"
+            className="about"
             onClick={() => {
               const anchor = document.querySelector("#aboutUsId");
               anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -43,7 +41,7 @@ export default function PageNav() {
             About Us
           </li>
           <li
-            id="contact"
+            className="contact"
             onClick={() => {
               const anchor = document.querySelector("#contactId");
               anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -54,9 +52,8 @@ export default function PageNav() {
         </ul>
       </div>
       <div className="rightSide">
+        <SiItunes className="iTunesNav" />
         <BsInstagram className="instagramNav" />
-        <BsSpotify className="spotifyNav" />
-        <BsYoutube className="youtubeNav" />
         <BsTwitter className="twitterNav" />
       </div>
     </div>

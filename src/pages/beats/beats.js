@@ -150,10 +150,8 @@ export default function Beats() {
   };
 
   return (
-    <div className="beatsSection">
-      <h1 className="beatsTitle" id="beatsId">
-        Beats
-      </h1>
+    <div className="beatsSection" id="beatsId">
+      <h1 className="beatsTitle">Beats</h1>
       <div className="trackWrapper">
         <div className="headers">
           <h5 className="titleHeader">Title</h5>
