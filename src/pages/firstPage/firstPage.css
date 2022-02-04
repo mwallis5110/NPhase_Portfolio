@@ -1,14 +1,15 @@
-.firstPageWrapper {
-    margin-bottom: 80px;
+.firstVideo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .navBar {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
-.logoWrapper { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -670px;
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
