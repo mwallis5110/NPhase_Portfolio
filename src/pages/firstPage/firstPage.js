@@ -1,4 +1,6 @@
 import React from "react";
+
+import gsap from "gsap";
 import { SiItunes } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";

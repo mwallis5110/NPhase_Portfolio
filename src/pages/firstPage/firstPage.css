@@ -28,10 +28,10 @@
 }
 
 .rightSide {
-    position: absolute;
+  position: absolute;
   top: 25px;
   right: 0px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .instagramNav {
@@ -39,9 +39,8 @@
   height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
   color: #e30613;
-  z-index: 3;
 }
 
 .iTunesNav {
@@ -49,7 +48,7 @@
   height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
   color: #e30613;
 }
 
@@ -58,7 +57,11 @@
   height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
   color: #e30613;
   padding-right: 30px;
+}
+
+.instagramNav:hover, .iTunesNav:hover, .twitterNav:hover {
+  cursor: pointer;
 }
