@@ -12,10 +12,10 @@ import "./products.css";
 
 export default function Products() {
   const biosData = [
-    { id: 1, img: Headshot1, name: "Product 1" },
-    { id: 2, img: Headshot2, name: "Product 2" },
-    { id: 3, img: Headshot3, name: "Product 3" },
-    { id: 4, img: Headshot4, name: "Product 4" },
+  //   { id: 1, img: Headshot1, name: "Product 1" },
+  //   { id: 2, img: Headshot2, name: "Product 2" },
+  //   { id: 3, img: Headshot3, name: "Product 3" },
+  //   { id: 4, img: Headshot4, name: "Product 4" },
   ]; //data for each card
 
    useEffect(() => {

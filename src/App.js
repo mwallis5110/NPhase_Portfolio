@@ -2,6 +2,7 @@ import React, { useState, useEffect} from "react";
 
 import FirstPage from "./pages/firstPage/firstPage.js";
 import Beats from "./pages/beats/beats.js";
+import Mixes from "./pages/mixes/mixes.js"
 import Services from "./pages/services/services.js";
 import AboutUs from "./pages/aboutUs/aboutUs.js";
 import Contact from "./pages/contact/contact.js";
@@ -27,6 +28,7 @@ export default function App() {
             <img className="backgroundGif" src={MainGif} alt=""></img>
             <FirstPage />
             <Beats />
+        <Mixes />
             <Services />
             <AboutUs />
             <Contact />
