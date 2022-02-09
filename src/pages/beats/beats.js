@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import useSound from "use-sound";
-
 import {TracksArray} from "../../components/tracksArray/tracksArray.js";
 
 import { FaPlay, FaPause } from "react-icons/fa";
@@ -80,7 +78,11 @@ export default function Beats() {
             return (
               <div className="eachTrackWrapper">
                 <span className="trackTitle">{track.title}</span>
-                <img className="albumCover" src={track.albumCover} alt="album cover"></img>
+                <img
+                  className="albumCover"
+                  src={track.albumCover}
+                  alt="album cover"
+                ></img>
                 <span className="trackArtist">{track.artist}</span>
                 <div className="audioPlayer">
                   <audio
@@ -110,12 +112,14 @@ export default function Beats() {
                   <div>
                     {duration && !isNaN(duration) && calculateTime(duration)}
                   </div>
-                  
                 </div>
               </div>
             );
           })}
         </div>
+      </div>
+      <div className="beatsButton">
+        <button className="buyBeats">Purchase Beats</button>
       </div>
     </div>
   );

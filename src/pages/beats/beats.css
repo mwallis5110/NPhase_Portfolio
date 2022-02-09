@@ -71,12 +71,6 @@
   border: 1px solid black;
   background-image: linear-gradient(to top right, black 10%, #e30613, black);
   border-radius: 10px;
-  /* background-color: #494848; */
-}
-
-.trackTitle {
-  padding-right: 120px;
-  color: white;
 }
 
 .albumCover {
@@ -188,4 +182,19 @@
 .progressBar:active::-moz-range-thumb {
   transform: scale(1.2);
   background: blue;
+}
+
+.beatsButton {
+  display: flex;
+  justify-content: center;
+}
+
+.buyBeats {
+  background-color: #e30613;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }

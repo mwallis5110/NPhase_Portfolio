@@ -34,6 +34,13 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
       subtitle:
         "Integer tincidunt lectus leo, vitae congue lacus ullamcorper quis. Sed.",
     },
+    {
+      img: General,
+      alt: "Pricing",
+      title: "Pricing",
+      subtitle:
+        "Integer tincidunt lectus leo, vitae congue lacus ullamcorper quis. Sed.",
+    },
   ];
 
   //State used for determining and setting current image in slideshow
