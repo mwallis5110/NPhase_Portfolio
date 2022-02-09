@@ -22,40 +22,33 @@
   color: #e30613;
 }
 
-.instagram {
-  width: 30px;
-  height: 30px;
-  margin-left: 60px;
-  margin-right: 95px;
-  cursor: pointer;
-  color: #e30613;
+.socialComponent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.spotify {
-  width: 30px;
-  height: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+.iTunesContact {
+  height: 40px;
+  width: 40px;
+  color:#e30613;
+  padding-right: 100px;
   cursor: pointer;
-  color: #e30613;
 }
 
-.youtube {
-  width: 30px;
-  height: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+.instagramContact {
+  height: 40px;
+  width: 40px;
+  color:#e30613;
   cursor: pointer;
-  color: #e30613;
 }
 
-.twitter {
-  width: 30px;
-  height: 30px;
-  margin-right: 60px;
-  margin-left: 95px;
+.twitterContact {
+  height: 40px;
+  width: 40px;
+  color:#e30613;
+  padding-left: 100px;
   cursor: pointer;
-  color: #e30613;
 }
 
 .formWrapper {

@@ -13,7 +13,7 @@ export default function CompanyBio() {
 
   return (
     <div className="companyBioWrapper" data-aos="slide-right">
-      <h1 className="nPhaseTitle">About NPhase</h1>
+      <h1 className="nPhaseTitle">Who We Are</h1>
       <h3 className="aboutText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
         ligula leo, volutpat ac ligula sed, pretium efficitur ex. Phasellus

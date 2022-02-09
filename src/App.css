@@ -1,7 +1,28 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   overflow: hidden;
 }
+
+  .backgroundGif {
+  /* background-image: "url(./assets/videos/sample1.mp4)"; */
+  /* background-attachment: fixed; */
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: left;
+  z-index: -1;
+  /* transform: (translateX(50%)); */
+}
+
+/* .mainGif {
+    background-image: "url(./assets/images/animatedImage.gif)";
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+} */
 
 .App-logo {
   height: 40vmin;

@@ -8,7 +8,7 @@ export default function Services() {
 
   return (
     <div className="slideShow" id="servicesId">
-      <h1>Services</h1>
+      <h1 className="servicesTitle">Services</h1>
         <ImageSlider />
     </div>
   );

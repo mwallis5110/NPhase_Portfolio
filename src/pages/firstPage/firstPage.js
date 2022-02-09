@@ -1,6 +1,6 @@
 import React from "react";
 
-import gsap from "gsap";
+
 import { SiItunes } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
@@ -9,6 +9,7 @@ import Logo from "../../components/logo/logo.js";
 import Navbar from "../../components/nav/nav.js";
 import MainVid from "../../assets/videos/sample1.mp4";
 import ScrollButton from "../../components/scrollButton/scrollButton.js";
+import AnimatedImage from "../../assets/images/animatedImage.gif"
 
 import "./firstPage.css";
 
@@ -29,7 +30,7 @@ export default function FirstPage() {
   setTimeout(startVideo, 1500);
 
   return (
-      <div className="firstPageVid">
+      <div className="firstPageWrapper">
         <Navbar />
         <div className="rightSide">
           {/* Cursor: pointer needs to be working */}
@@ -37,9 +38,8 @@ export default function FirstPage() {
           <BsInstagram className="instagramNav" />
           <BsTwitter className="twitterNav" />
         </div>
-        <video className="firstVideo" autoPlay loop muted>
-          <source src={MainVid} type="video/mp4" />
-        </video>
+        {/* <img className="animatedImage" alt="main page animated gif" src={AnimatedImage} type="gif" >
+        </img> */}
         <div className="logoWrapper">
           <Logo />
         </div>

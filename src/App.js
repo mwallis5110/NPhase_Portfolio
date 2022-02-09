@@ -1,13 +1,13 @@
 import React, { useState, useEffect} from "react";
-// import { gsap } from "gsap";
 
 import FirstPage from "./pages/firstPage/firstPage.js";
 import Beats from "./pages/beats/beats.js";
 import Services from "./pages/services/services.js";
 import AboutUs from "./pages/aboutUs/aboutUs.js";
 import Contact from "./pages/contact/contact.js";
-
 import LoadingScreen from "./components/loading/loading.js";
+
+import MainGif from "./assets/images/animatedImage.gif";
 
 import "./App.css";
 
@@ -22,17 +22,19 @@ export default function App() {
   return (
     <>
       {loading === false ? (
-          <div className="App">
-              <FirstPage/>
-              <Beats/>
-              <Services/>
-              <AboutUs/>
-              <Contact/>
-            
+        <div className="App">
+          {/* <div className="backgroundGif"> */}
+            <img className="backgroundGif" src={MainGif} alt=""></img>
+            <FirstPage />
+            <Beats />
+            <Services />
+            <AboutUs />
+            <Contact />
           </div>
-       ) : (
+        // </div>
+      ) : (
         <LoadingScreen />
-      )} 
+      )}
     </>
   );
 }

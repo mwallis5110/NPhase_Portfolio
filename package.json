@@ -20,7 +20,9 @@
     "react-scripts": "4.0.3",
     "react-slideshow-image": "^3.6.1",
     "react-use": "^17.3.2",
+    "recyclerlistview": "^3.0.5",
     "styled-components": "^5.3.3",
+    "use-sound": "^4.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

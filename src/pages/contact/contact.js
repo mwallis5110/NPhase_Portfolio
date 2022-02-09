@@ -1,9 +1,8 @@
 import React from "react";
 
+import { SiItunes } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { BsSpotify } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
 import "./contact.css";
 
 export default function Contact() {
@@ -11,10 +10,9 @@ export default function Contact() {
     <div className="contactWrapper" id="contactId">
       <h1 className="contactTitle">Get In Touch</h1>
       <div className="socialComponent">
-        <BsInstagram className="instagram" />
-        <BsSpotify className="spotify" />
-        <BsYoutube className="youtube" />
-        <BsTwitter className="twitter" />
+        <SiItunes className="iTunesContact" />
+        <BsInstagram className="instagramContact" />
+        <BsTwitter className="twitterContact" />
       </div>
       <div className="formWrapper">
         <form className="contactForm">
