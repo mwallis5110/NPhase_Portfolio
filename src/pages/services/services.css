@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Flange BQ Italic;
-    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+  font-family: Flange BQ Italic;
+  src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
 }
 
 @font-face {
@@ -16,4 +16,5 @@
 
 .servicesTitle {
   text-align: center;
+  color: white;
 }

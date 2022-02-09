@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Flange BQ Italic;
-    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+  font-family: Flange BQ Italic;
+  src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
 }
 
 @font-face {
@@ -8,30 +8,41 @@
   src: url("../../assets/fonts/Nexa\ Bold.otf");
 }
 
+.productsHeading {
+  text-align: center;
+  color: white;
+}
+
+.productsWrapper {
+  background-color: rgb(255, 255, 255, 0.15);
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
 .cardWrapper {
-    margin: 2rem;
-    display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    justify-content:space-evenly;
-    margin-top: 50px;
+  text-align: center;
+  margin: 2rem;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .card {
-    /* border: 1px solid black; */
-    /* box-shadow: 0 0 10px 5px; */
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* min-width: 28rem; */
-    width: 16rem;
-    height: 40vh;
-    font-family: Nexa Bold;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 16rem;
+  height: 35vh;
+  font-family: Nexa Bold;
+  color: white;
 }
 
 .headShot {
-    height: 200px;
-    width: 200px;
+  height: 150px;
+  width: 150px;
 }
-
