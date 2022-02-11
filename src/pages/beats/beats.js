@@ -123,4 +123,5 @@ export default function Beats() {
       </div>
     </div>
   );
+
 }
