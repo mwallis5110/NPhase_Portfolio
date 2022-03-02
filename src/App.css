@@ -15,14 +15,14 @@
   /* transform: (translateX(50%)); */
 }
 
-/* .mainGif {
+.mainLogoBg {
     background-image: "url(./assets/images/animatedImage.gif)";
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
-} */
+}
 
 .App-logo {
   height: 40vmin;
