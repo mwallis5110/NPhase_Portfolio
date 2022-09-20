@@ -57,6 +57,8 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
     return () => clearTimeout(timer);
   }, [currentImage]);
 
+  //TODO: Fix this^, make image slider able to be continuously clicked
+
   return (
     <div className="wrapper">
       <div

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Flange BQ Italic;
+  src: url("../../../assets/fonts/Flange\ BQ\ Italic.ttf");
+}
+
+.navLogo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+.links {
+  position: absolute;
+  display: inline-flex;
+  left: 30px;
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+.beats,
+.mixes,
+.services,
+.about,
+.contact {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 15px;
+  display: inline-block;
+  font-family: Flange BQ Italic;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.beats:hover,
+.mixes:hover,
+.services:hover,
+.about:hover,
+.contact:hover {
+  background: linear-gradient(to bottom, #e30613 0%, transparent 100%);
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
