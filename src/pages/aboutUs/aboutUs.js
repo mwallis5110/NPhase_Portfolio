@@ -9,7 +9,7 @@ export default function AboutUs() {
 
   return (
     <div className="aboutUsWrapper" id="aboutUsId">
-      {/* <h1 className="teamTitle">Who We Are</h1>' */}
+      <h1 className="teamTitle">Who We Are</h1>'
       <CompanyBio />
       <Products />
     </div>

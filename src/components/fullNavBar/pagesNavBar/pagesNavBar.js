@@ -13,7 +13,7 @@ export default function PagesNavBar() {
           className="beats"
           onClick={() => {
             const anchor = document.querySelector("#beatsId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
         >
           Beats
@@ -22,7 +22,7 @@ export default function PagesNavBar() {
           className="mixes"
           onClick={() => {
             const anchor = document.querySelector("#mixesId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
         >
           Mixes
@@ -31,7 +31,7 @@ export default function PagesNavBar() {
           className="services"
           onClick={() => {
             const anchor = document.querySelector("#servicesId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
         >
           Services
@@ -40,7 +40,7 @@ export default function PagesNavBar() {
           className="about"
           onClick={() => {
             const anchor = document.querySelector("#aboutUsId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
         >
           About Us
@@ -49,7 +49,7 @@ export default function PagesNavBar() {
           className="contact"
           onClick={() => {
             const anchor = document.querySelector("#contactId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
         >
           Get In Touch

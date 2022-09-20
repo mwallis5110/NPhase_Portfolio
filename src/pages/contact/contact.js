@@ -3,6 +3,7 @@ import React from "react";
 import { SiItunes } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
+import ScrollButton from "../../components/scrollButton/scrollButton";
 import "./contact.css";
 
 export default function Contact() {

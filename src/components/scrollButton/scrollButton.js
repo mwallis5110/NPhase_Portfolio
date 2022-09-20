@@ -4,35 +4,42 @@ import { IoIosArrowUp } from "react-icons/io";
 
 import "./scrollButton.css";
 
-export default function ScrollButton() {
-  const [visible, setVisible] = useState(false);
+const ScrollButton = () => {
+  // const [visible, setVisible] = useState(true);
 
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
-  };
+  // const toggleVisible = () => {
+  //   const scrolled = document.body.scrollTop;
+  //   console.log(scrolled);
+  //   if (scrolled > 300) {
+  //     setVisible(true);
+  //   } else if (scrolled <= 300) {
+  //     setVisible(false);
+  //   }
+  // };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
-  window.addEventListener("scroll", toggleVisible);
+  // document.addEventListener("scroll", toggleVisible);
   return (
-    <div className="scrollButtonWrapper">
+    <div>
       <button
         className="icon"
-        onClick={scrollToTop}
-        style={{ display: visible ? "inline" : "none" }}
+        onClick={() => {
+          const anchor = document.querySelector("#firstPage");
+          anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+        }}
+        // onClick={scrollToTop}
+        // style={{ display: visible ? "inline" : "none" }}
       >
         <IoIosArrowUp />
       </button>
     </div>
   );
-}
+};
+
+export default ScrollButton;

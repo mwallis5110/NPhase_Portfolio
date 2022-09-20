@@ -7,6 +7,7 @@ import Services from "./pages/services/services.js";
 import AboutUs from "./pages/aboutUs/aboutUs.js";
 import Contact from "./pages/contact/contact.js";
 import LoadingScreen from "./components/loading/loading.js";
+import ScrollButton from "./components/scrollButton/scrollButton.js";
 
 import LogoBackground from "./assets/logoBackgroundAnimation.mp4";
 
@@ -28,7 +29,10 @@ export default function App() {
 
       video.setAttribute("autoplay", true);
     } catch (err) {
-      console.log(err, "Video play error. Your browser does not support this file type.");
+      console.log(
+        err,
+        "Video play error. Your browser does not support this file type"
+      );
       //Throws error if video is unable to play/autoplay
     }
   };
@@ -47,6 +51,7 @@ export default function App() {
             />
           </video>
           <div className="pages">
+            {/* <ScrollButton /> */}
             <FirstPage />
             <Beats />
             <Mixes />

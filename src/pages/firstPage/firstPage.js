@@ -6,11 +6,10 @@ import ScrollButton from "../../components/scrollButton/scrollButton.js";
 import "./firstPage.css";
 
 export default function FirstPage() {
-
   return (
-      <div className="firstPageWrapper">
-        <FullNavbar />
-        <ScrollButton />
-      </div>
+    <div className="firstPageWrapper" id="firstPage">
+      <FullNavbar />
+      <ScrollButton />
+    </div>
   );
 }
