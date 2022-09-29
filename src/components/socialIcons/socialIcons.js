@@ -8,14 +8,14 @@ import "./socialIcons.css";
 export default function SocialIcons({ paddingRight, paddingLeft }) {
   return (
     <div className="socialIcons">
-      <SiItunes
-        className="iTunesIcon"
-      />
+      <SiItunes className="iTunesIcon" href="" />
       <BsInstagram
         className="instagramIcon"
+        href="https://www.instagram.com/Nphaserecords/?hl=en"
       />
       <BsTwitter
         className="twitterIcon"
+        href="https://twitter.com/nphaserecords"
       />
     </div>
   );
