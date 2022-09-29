@@ -29,29 +29,6 @@
   justify-content: center;
 }
 
-.iTunesContact {
-  height: 40px;
-  width: 40px;
-  color:#e30613;
-  padding-right: 100px;
-  cursor: pointer;
-}
-
-.instagramContact {
-  height: 40px;
-  width: 40px;
-  color:#e30613;
-  cursor: pointer;
-}
-
-.twitterContact {
-  height: 40px;
-  width: 40px;
-  color:#e30613;
-  padding-left: 100px;
-  cursor: pointer;
-}
-
 .formWrapper {
   margin: 30px;
   display: flex;

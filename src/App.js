@@ -42,7 +42,7 @@ export default function App() {
     <>
       {loading === false ? (
         <div className="App">
-          <video muted id="mainVideo">
+          <video muted autoPlay id="mainVideo">
             <source
               src={LogoBackground}
               type="video/mp4"

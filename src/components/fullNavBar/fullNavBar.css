@@ -1,11 +1,3 @@
-.leftSide {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  position: absolute;
-  left: 30px;
-}
-
 @font-face {
   font-family: Flange BQ Italic;
   src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
@@ -18,4 +10,10 @@
   display: flex;
   text-decoration: "none";
   z-index: 2;
+}
+
+.rightSide {
+  position: absolute;
+  top: 25px;
+  right: 0px
 }

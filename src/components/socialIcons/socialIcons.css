@@ -1,0 +1,17 @@
+.instagramIcon,
+.iTunesIcon,
+.twitterIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #e30613;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.instagramIcon:hover,
+.iTunesIcon:hover,
+.twitterIcon:hover {
+  color: white;
+  cursor: pointer;
+}
