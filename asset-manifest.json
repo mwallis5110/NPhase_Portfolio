@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/NPhase_Records/static/css/main.5ea5fedd.chunk.css",
+    "main.js": "/NPhase_Records/static/js/main.b38c7edf.chunk.js",
+    "main.js.map": "/NPhase_Records/static/js/main.b38c7edf.chunk.js.map",
+    "runtime-main.js": "/NPhase_Records/static/js/runtime-main.af491be5.js",
+    "runtime-main.js.map": "/NPhase_Records/static/js/runtime-main.af491be5.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/NPhase_Records/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.6c9adf07.chunk.js": "/NPhase_Records/static/js/2.6c9adf07.chunk.js",
+    "static/js/2.6c9adf07.chunk.js.map": "/NPhase_Records/static/js/2.6c9adf07.chunk.js.map",
+    "index.html": "/NPhase_Records/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/NPhase_Records/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.5ea5fedd.chunk.css.map": "/NPhase_Records/static/css/main.5ea5fedd.chunk.css.map",
+    "static/js/2.6c9adf07.chunk.js.LICENSE.txt": "/NPhase_Records/static/js/2.6c9adf07.chunk.js.LICENSE.txt",
+    "static/media/BabyElephantWalk60.258f1e74.wav": "/NPhase_Records/static/media/BabyElephantWalk60.258f1e74.wav",
+    "static/media/CantinaBand3.04c261ab.wav": "/NPhase_Records/static/media/CantinaBand3.04c261ab.wav",
+    "static/media/CantinaBand60.ead6848d.wav": "/NPhase_Records/static/media/CantinaBand60.ead6848d.wav",
+    "static/media/Fanfare60.15fa3633.wav": "/NPhase_Records/static/media/Fanfare60.15fa3633.wav",
+    "static/media/contact.css": "/NPhase_Records/static/media/Nexa Bold.c2b99812.otf",
+    "static/media/ImperialMarch60.162a3cf8.wav": "/NPhase_Records/static/media/ImperialMarch60.162a3cf8.wav",
+    "static/media/PinkPanther30.fe0e4500.wav": "/NPhase_Records/static/media/PinkPanther30.fe0e4500.wav",
+    "static/media/PinkPanther60.e086579a.wav": "/NPhase_Records/static/media/PinkPanther60.e086579a.wav",
+    "static/media/general.7526cd59.png": "/NPhase_Records/static/media/general.7526cd59.png",
+    "static/media/gettysburg.b86f0797.wav": "/NPhase_Records/static/media/gettysburg.b86f0797.wav",
+    "static/media/gettysburg10.66e712e0.wav": "/NPhase_Records/static/media/gettysburg10.66e712e0.wav",
+    "static/media/logoBackgroundAnimation.fe847062.mp4": "/NPhase_Records/static/media/logoBackgroundAnimation.fe847062.mp4",
+    "static/media/logoCircle.ee9c35f4.png": "/NPhase_Records/static/media/logoCircle.ee9c35f4.png",
+    "static/media/mixing.375b8625.png": "/NPhase_Records/static/media/mixing.375b8625.png",
+    "static/media/preamble10.c71d0c24.wav": "/NPhase_Records/static/media/preamble10.c71d0c24.wav",
+    "static/media/recording.f05b14a2.png": "/NPhase_Records/static/media/recording.f05b14a2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af491be5.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.6c9adf07.chunk.js",
+    "static/css/main.5ea5fedd.chunk.css",
+    "static/js/main.b38c7edf.chunk.js"
+  ]
+}
