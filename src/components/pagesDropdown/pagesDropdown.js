@@ -1,15 +1,36 @@
 import React from "react";
 
 import NavLogo from "../../assets/logo/logoCircle.png";
+import { menuItems } from "./menuItems";
 
 import "./pagesDropdown.css";
 
 export default function PagesDropdown() {
   return (
     <div className="pagesNavBar">
-      <img className="navLogo" src={NavLogo} alt="small logo" />
+      <img
+        id="navLogo"
+        a
+        href="/"
+        src={NavLogo}
+        alt="Nav bar logo, takes user to top of page"
+      />
       <ul className="links">
-        <li
+        {menuItems.map((menu, index) => {
+          return (
+            <li
+              className="menuItems"
+              key={index}
+              onClick={() => {
+                const anchor = document.querySelector(menu.anchor);
+                anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            >
+              {menu.title}
+            </li>
+          );
+        })}
+        {/* <li
           className="beats"
           onClick={() => {
             const anchor = document.querySelector("#beatsId");
@@ -53,7 +74,7 @@ export default function PagesDropdown() {
           }}
         >
           Get In Touch
-        </li>
+        </li> */}
       </ul>
     </div>
   );

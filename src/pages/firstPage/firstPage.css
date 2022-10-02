@@ -1,17 +1,12 @@
-/* Nav bar transition */
-@keyframes nav-slide {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-/* TODO: Nav bar slide-in */
-
 .firstPageWrapper {
   height: 100vh;
   width: 100vw;
 }
+
+.rightSide {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+/* TODO: Nav bar slide-in */
