@@ -1,69 +1,69 @@
 @font-face {
-    font-family: Flange BQ Italic;
-    src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
+  font-family: Flange BQ Italic;
+  src: url("../../assets/fonts/Flange\ BQ\ Italic.ttf");
 }
 
 @font-face {
   font-family: Nexa Bold;
   src: url("../../assets/fonts/Nexa\ Bold.otf");
-}  
+}
 
 .wrapper {
-    /* border: 3px solid red; */
-    height: 90vh;
-    width: 90vw;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    margin-right: 5vw;
-    margin-left: 5vw;
+  border: 10px solid red;
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 .slide {
-    height: 100%;
-    width: 100%;
-    flex-shrink: 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    /* border: 3px solid blue; */
-    display: flex;
-    transition: 500ms ease-in-out;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  /* border: 3px solid blue; */
+  display: flex;
+  transition: 500ms ease-in-out;
 }
 
 .slide .center {
-    flex: 94%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    text-align: justify;
-    text-align-last: center;
-    color: rgb(255, 255, 255, .8);
-    font-family: Nexa Bold;
+  flex: 94%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  text-align-last: center;
+  color: rgb(255, 255, 255, 0.8);
+  font-family: Nexa Bold;
 }
 
-.slide .left, .slide .right {
-    flex: 3%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, .15);
-    display: grid;
-    place-items: center;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+.slide .left,
+.slide .right {
+  flex: 3%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.15);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
 }
 
-.slide .left:hover, .slide .right:hover {
-    background-color: rgb(0, 0, 0, .35);
+.slide .left:hover,
+.slide .right:hover {
+  background-color: rgb(0, 0, 0, 0.35);
 }
 
 .title {
-    font-size: 100px;
-    text-decoration: underline;
+  font-size: 100px;
+  text-decoration: underline;
 }
 
 .subTitle {
-    font-size: 30px;
+  font-size: 30px;
 }
-
-

@@ -1,13 +1,18 @@
 import React from "react";
 
-import FullNavbar from "../../components/fullNavBar/fullNavBar.js";
-
+import SocialIcons from "../../components/socialIcons/socialIcons";
+import PagesDropdown from "../../components/pagesDropdown/pagesDropdown.js";
 import "./firstPage.css";
 
 export default function FirstPage() {
   return (
     <div className="firstPageWrapper" id="firstPage">
-      <FullNavbar />
+      <div className="leftSide">
+        <PagesDropdown />
+      </div>
+      <div className="rightSide">
+        <SocialIcons />
+      </div>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
 
-import NavLogo from "../../../assets/logo/logoCircle.png";
+import NavLogo from "../../assets/logo/logoCircle.png";
 
-import "./pagesNavBar.css";
+import "./pagesDropdown.css";
 
-export default function PagesNavBar() {
+export default function PagesDropdown() {
   return (
     <div className="pagesNavBar">
       <img className="navLogo" src={NavLogo} alt="small logo" />
