@@ -8,11 +8,6 @@
   src: url("../../assets/fonts/Nexa\ Bold.otf");
 }
 
-.productsHeading {
-  text-align: center;
-  color: white;
-}
-
 .productsWrapper {
   background-color: rgb(255, 255, 255, 0.15);
   padding-top: 10px;
@@ -21,28 +16,8 @@
   border-radius: 20px;
 }
 
-.cardWrapper {
+.productsHeading {
   text-align: center;
-  margin: 2rem;
-  display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-.card {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 16rem;
-  height: 35vh;
-  font-family: Nexa Bold;
   color: white;
-}
-
-.headShot {
-  height: 150px;
-  width: 150px;
+  padding-bottom: 20px;
 }

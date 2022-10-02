@@ -1,18 +1,11 @@
-import React, {useEffect} from "react";
-
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 import "./companyBio.css";
 
 export default function CompanyBio() {
 
-  useEffect(() => {
-    Aos.init({ duration: 1500 });
-  }, []);
-
   return (
-    <div className="companyBioWrapper" data-aos="slide-right">
+    <div className="companyBioWrapper">
       <h1 className="nPhaseTitle">Who We Are</h1>
       <h3 className="aboutText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum

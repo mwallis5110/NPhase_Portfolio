@@ -1,23 +1,13 @@
-import React, {useEffect} from "react";
-
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 import "./products.css";
 
 export default function Products() {
-
-
-  //  useEffect(() => {
-  //    Aos.init({ duration: 1500 });
-  //  }, []);
-
   return (
-    <div className="productsWrapper" data-aos="slide-left">
+    <div className="productsWrapper">
       <h2 className="productsHeading">
         **Something about using the most advanced and highest quality audio
         production products, such as:**
-        <p></p>
       </h2>
     </div>
   );

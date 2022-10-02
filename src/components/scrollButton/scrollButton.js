@@ -21,3 +21,6 @@ const ScrollButton = () => {
 };
 
 export default ScrollButton;
+
+//TODO in future: display: none if app hasn't been scrolled. 
+//Problem is that only app is scrolling and window doesn't register scroll (overflow-y: scroll)
