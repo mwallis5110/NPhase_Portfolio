@@ -2,10 +2,21 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import SocialIcons from "../../components/socialIcons/socialIcons";
+import {
+  SuccessMessagePopup,
+  ErrorMessagePopup,
+} from "../../components/messagePopups/messagePopups";
 import "./contact.css";
 
 export default function Contact() {
   const form = useRef();
+
+  const renderPopup = (e) => {
+    if (sendEmail.result === 200) {
+      return <SuccessMessagePopup />;
+    }
+    return <ErrorMessagePopup />;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,6 +38,7 @@ export default function Contact() {
         }
       );
   };
+
   return (
     <div className="contactWrapper" id="contactId">
       <h1 className="contactTitle">Get In Touch</h1>
@@ -34,7 +46,11 @@ export default function Contact() {
         <SocialIcons />
       </div>
       <div className="formWrapper">
-        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+        <form
+          className="contactForm"
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <input
             id="name"
             type="text"
