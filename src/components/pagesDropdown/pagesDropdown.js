@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
 import NavLogo from "../../assets/logo/logoCircle.png";
 import { menuItems } from "./menuItems";
+import { IoMenuOutline } from "react-icons/io5";
 
 import "./pagesDropdown.css";
 
 export default function PagesDropdown() {
+  const [dropdown, setDropdown] = useState(false);
   return (
-    <div className="pagesNavBar">
-      <img
-        id="navLogo"
-        a
+    <div className="pagesDropdown">
+      <button
+        className="dropdownButton"
         href="/"
-        src={NavLogo}
-        alt="Nav bar logo, takes user to top of page"
-      />
-      <ul className="links">
+        aria-expanded={dropdown ? "true" : "false"}
+        onClick={() => setDropdown((prev) => !prev)}
+      >
+        <img
+          id="navLogo"
+          src={NavLogo}
+          alt="Nav bar logo, takes user to top of page"
+        />
+        <IoMenuOutline id="menuIcon" />
+      </button>
+      <ul className={`dropdown ${ dropdown ? "links" : "noshow"}`} dropdown={dropdown}>
         {menuItems.map((menu, index) => {
           return (
             <li
@@ -30,51 +38,6 @@ export default function PagesDropdown() {
             </li>
           );
         })}
-        {/* <li
-          className="beats"
-          onClick={() => {
-            const anchor = document.querySelector("#beatsId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Beats
-        </li>
-        <li
-          className="mixes"
-          onClick={() => {
-            const anchor = document.querySelector("#mixesId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Mixes
-        </li>
-        <li
-          className="services"
-          onClick={() => {
-            const anchor = document.querySelector("#servicesId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Services
-        </li>
-        <li
-          className="about"
-          onClick={() => {
-            const anchor = document.querySelector("#aboutUsId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          About Us
-        </li>
-        <li
-          className="contact"
-          onClick={() => {
-            const anchor = document.querySelector("#contactId");
-            anchor.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Get In Touch
-        </li> */}
       </ul>
     </div>
   );
