@@ -35,6 +35,6 @@ export const MixesBeforeArray = [
     artist: "John Smith",
     track: Track5,
   },
-]
-  
+];
+
 export default MixesBeforeArray;

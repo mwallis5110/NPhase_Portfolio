@@ -1,22 +1,14 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 import SocialIcons from "../../components/socialIcons/socialIcons";
-import {
-  SuccessMessagePopup,
-  ErrorMessagePopup,
-} from "../../components/messagePopups/messagePopups";
+import SmallLogo from "../../assets/logo/logoCircle.png";
+
 import "./contact.css";
 
 export default function Contact() {
   const form = useRef();
-
-  const renderPopup = (e) => {
-    if (sendEmail.result === 200) {
-      return <SuccessMessagePopup />;
-    }
-    return <ErrorMessagePopup />;
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,10 +23,18 @@ export default function Contact() {
       .then(
         (result) => {
           e.target.reset();
-          console.log(result.text);
+          console.log(result);
+          Swal.fire({
+            title: "Success!",
+            text: "Message sent successfully. We'll contact you soon",
+          });
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            title: "Error",
+            text: "An error occurred when sending the message. Please email us at **Email address** instead",
+          });
         }
       );
   };
@@ -46,11 +46,7 @@ export default function Contact() {
         <SocialIcons />
       </div>
       <div className="formWrapper">
-        <form
-          className="contactForm"
-          ref={form}
-          onSubmit={sendEmail}
-        >
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
           <input
             id="name"
             type="text"

@@ -1,9 +1,0 @@
-.successPopupWrapper {
-  width: 150px;
-  height: 30px;
-  position: fixed;
-  bottom: 60px;
-  color: green;
-  z-index: 3;
-  position: fixed;
-}

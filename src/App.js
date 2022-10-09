@@ -8,7 +8,7 @@ import AboutUs from "./pages/aboutUs/aboutUs.js";
 import Contact from "./pages/contact/contact.js";
 import LoadingScreen from "./components/loading/loading.js";
 
-import LogoBackground from "./assets/logoBackgroundAnimation.mp4";
+import LogoBackground from "./assets/nphaseLogoAnimation.mp4";
 
 import "./App.css";
 
@@ -20,29 +20,11 @@ export default function App() {
     setTimeout(() => setLoading(false), 2000);
   }, []);
 
-  const startVideo = async () => {
-    const video = document.querySelector("#mainVideo");
-
-    try {
-      await video.play();
-
-      video.setAttribute("autoplay", true);
-    } catch (err) {
-      console.log(
-        err,
-        "Video play error. Your browser does not support this file type"
-      );
-      //Throws error if video is unable to play/autoplay
-    }
-  };
-
-  setTimeout(startVideo, 1000);
-
   return (
     <>
       {loading === false ? (
         <div className="App">
-          <video muted autoPlay id="mainVideo">
+          <video muted autoPlay loop id="mainVideo">
             <source
               src={LogoBackground}
               type="video/mp4"
