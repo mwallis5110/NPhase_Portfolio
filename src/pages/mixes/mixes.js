@@ -1,14 +1,45 @@
 import React, { useState, useRef, useEffect } from "react";
 
-// import { MixesBeforeArray } from "../../components/mixesArray/mixesBeforeArray.js";
-// import { MixesAfterArray } from "../../components/mixesArray/mixesAfterArray.js";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+
+import { MixesBeforeArray } from "../../components/mixesArray/mixesBeforeArray.js";
+import { MixesAfterArray } from "../../components/mixesArray/mixesAfterArray.js";
 
 // import { FaPlay, FaPause } from "react-icons/fa";
 
 import "./mixes.css";
 
 export default function Mixes() {
-  return <div id="#beatsId"></div>;
+  return (
+    <div id="mixessId">
+      <div className="allMixes">
+        <div className="beforeMixes">
+          {MixesBeforeArray.map((track) => {
+            return (
+              <AudioPlayer
+                header={track.title}
+                src={track.track}
+                customAdditionalControls={[]}
+              />
+            );
+          })}
+        </div>
+        <div className="afterMixes">
+          {MixesAfterArray.map((track) => {
+            return (
+              <AudioPlayer
+                header={track.title}
+                src={track.track}
+                customAdditionalControls={[]}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+
   // //State
   // const [isPlaying, setIsPlaying] = useState(false);
   // const [duration, setDuration] = useState(0);

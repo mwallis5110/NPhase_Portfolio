@@ -188,3 +188,13 @@
   transform: scale(1.2);
   background: blue;
 }
+
+.beforeMixes {
+  display: inline-block;
+  width: 50%;
+}
+
+.afterMixes {
+  display: inline-block;
+  width: 50%;
+}
