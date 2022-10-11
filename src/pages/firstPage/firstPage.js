@@ -6,11 +6,11 @@ import "./firstPage.css";
 
 export default function FirstPage() {
   return (
-    <div className="firstPageWrapper" id="firstPage">
-      <div className="leftSide">
+    <div className="firstPageSection" id="firstPage">
+      <div className="leftSideNav">
         <PagesDropdown />
       </div>
-      <div className="rightSide">
+      <div className="rightSideNav">
         <SocialIcons />
       </div>
     </div>

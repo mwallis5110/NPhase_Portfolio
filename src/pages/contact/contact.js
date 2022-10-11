@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 import SocialIcons from "../../components/socialIcons/socialIcons";
-import SmallLogo from "../../assets/logo/logoCircle.png";
 
 import "./contact.css";
 
@@ -40,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contactWrapper" id="contactId">
+    <div className="contactSection" id="contactId">
       <h1 className="contactTitle">Get In Touch</h1>
       <div className="socialComponent">
         <SocialIcons />

@@ -8,9 +8,10 @@
   src: url("../../assets/fonts/Nexa\ Bold.otf");
 }
 
-.contactWrapper {
+.contactSection {
   background-color: black;
   justify-content: center;
+  margin-bottom: 20px;
   padding-top: 10px;
   height: 100vh;
 }
@@ -29,7 +30,7 @@
 }
 
 .formWrapper {
-  margin: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,8 +60,7 @@
 }
 
 .submitButton {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 10px;
   background: #e30613;
   color: white;
   width: 150px;
