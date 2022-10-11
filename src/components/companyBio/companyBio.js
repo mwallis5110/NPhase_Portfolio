@@ -7,7 +7,7 @@ export default function CompanyBio() {
   return (
     <div className="companyBioWrapper">
       <h1 className="companyBioTitle">Who We Are</h1>
-      <h3 className="aboutText">
+      <h3 className="companyBioText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
         ligula leo, volutpat ac ligula sed, pretium efficitur ex. Phasellus
         finibus laoreet est at pharetra. Praesent cursus est vel efficitur

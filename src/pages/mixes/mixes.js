@@ -3,8 +3,8 @@ import React, { useState, useRef, useEffect } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
-import { MixesBeforeArray } from "../../components/mixesArray/mixesBeforeArray.js";
-import { MixesAfterArray } from "../../components/mixesArray/mixesAfterArray.js";
+import { MixesBeforeArray } from "../../components/dataArrays/mixesBeforeArray.js";
+import { MixesAfterArray } from "../../components/dataArrays/mixesAfterArray.js";
 
 // import { FaPlay, FaPause } from "react-icons/fa";
 
