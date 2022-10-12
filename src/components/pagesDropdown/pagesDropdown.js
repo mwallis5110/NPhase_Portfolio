@@ -11,7 +11,7 @@ export default function PagesDropdown() {
   return (
     <div className="pagesDropdown">
       <button
-        className="dropdownButton"
+        className={`${dropdown ? "expandedDropdownButton" : "dropdownButton"}`}
         href="/"
         aria-expanded={dropdown ? "true" : "false"}
         onClick={() => setDropdown((prev) => !prev)}
@@ -21,9 +21,14 @@ export default function PagesDropdown() {
           src={NavLogo}
           alt="Nav bar logo, takes user to top of page"
         />
-        <IoMenuOutline id="menuIcon" />
+        <IoMenuOutline
+          className={`${dropdown ? "noshow " : "menuIcon"}`}
+        />
       </button>
-      <ul className={`dropdown ${ dropdown ? "links" : "noshow"}`} dropdown={dropdown}>
+      <ul
+        className={`dropdown ${dropdown ? "links" : "noshow"}`}
+        dropdown={dropdown}
+      >
         {menuItems.map((menu, index) => {
           return (
             <li

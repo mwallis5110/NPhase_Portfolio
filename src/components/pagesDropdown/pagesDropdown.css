@@ -18,18 +18,35 @@
   z-index: 2;
 }
 
+.expandedDropdownButton {
+  position: fixed;
+  display: block;
+  justify-content: left;
+  left: 15px;
+  top: 15px;
+  width: 350px;
+  height: 100px;
+  background-color: gray;
+  opacity: 0.75;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
 .dropdownButton:hover {
   opacity: 1;
 }
 
 #navLogo {
-  display: inline-block;
+  display: inline-flex;
   width: 80px;
   height: 80px;
 }
 
-#menuIcon {
-  display: inline-block;
+.menuIcon {
+  display: inline-flex;
+  justify-content: end;
   width: 80px;
   height: 80px;
   color: white;
@@ -40,6 +57,7 @@
 }
 
 .links {
+  position: fixed;
   list-style-type: none;
   display: block;
   margin-top: 115px;
@@ -55,10 +73,11 @@
   color: white;
   cursor: pointer;
   text-align: center;
-  background: linear-gradient(to bottom, #e30613 0%, transparent 100%);
+  background: linear-gradient(to bottom, #e30613 0%, black 100%);
+  border-radius: 10px;
 }
 
 .menuItems:hover {
-  background: linear-gradient(to bottom, #e30613 0%, transparent 100%);
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
