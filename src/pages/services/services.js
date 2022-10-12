@@ -7,7 +7,7 @@ import "./services.css";
 export default function Services() {
 
   return (
-    <div className="servicesSection" id="servicesId">
+    <div className="servicesWrapper" id="servicesId">
       <h1 className="servicesTitle">Services</h1>
         <ImageSlider />
     </div>

@@ -6,7 +6,7 @@ import "./firstPage.css";
 
 export default function FirstPage() {
   return (
-    <div className="firstPageSection" id="firstPage">
+    <div className="firstPageWrapper" id="firstPage">
       <div className="leftSideNav">
         <PagesDropdown />
       </div>

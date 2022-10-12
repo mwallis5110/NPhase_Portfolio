@@ -8,13 +8,15 @@
   src: url("../../assets/fonts/Nexa\ Bold.otf");
 }
 
-.servicesSection {
-  margin-top: 30px;
-  font-family: Flange BQ Italic;
-  font-size: 30px;
+.servicesWrapper {
+  height: 115vh;
+  margin: 50px;
 }
 
 .servicesTitle {
   text-align: center;
   color: white;
+  font-family: Flange BQ Italic;
+  font-size: 60px;
+  margin-top: 40px;
 }

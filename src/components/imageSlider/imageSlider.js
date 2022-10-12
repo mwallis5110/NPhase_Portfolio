@@ -23,7 +23,7 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
   });
 
   return (
-    <div className="imageSlideWrapper">
+    <div className="imageSliderWrapper">
       <div
         className="singleSlide"
         style={{

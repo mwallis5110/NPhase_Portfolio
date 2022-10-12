@@ -39,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contactSection" id="contactId">
+    <div className="contactWrapper" id="contactId">
       <h1 className="contactTitle">Get In Touch</h1>
       <div className="socialComponent">
         <SocialIcons />

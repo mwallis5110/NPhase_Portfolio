@@ -12,12 +12,18 @@ import "./mixes.css";
 
 export default function Mixes() {
   return (
-    <div id="mixessId">
+    <div id="mixessId" className="mixesWrapper">
+      <h1 className="mixesTitle">Mixes</h1>
+      <div className="mixHeaders">
+        <h5 className="beforeHeader">Before</h5>
+        <h5 className="afterHeader">After</h5>
+      </div>
       <div className="allMixes">
         <div className="beforeMixes">
           {MixesBeforeArray.map((track) => {
             return (
               <AudioPlayer
+                className="eachMix"
                 header={track.title}
                 src={track.track}
                 customAdditionalControls={[]}
@@ -29,6 +35,7 @@ export default function Mixes() {
           {MixesAfterArray.map((track) => {
             return (
               <AudioPlayer
+                className="eachMix"
                 header={track.title}
                 src={track.track}
                 customAdditionalControls={[]}

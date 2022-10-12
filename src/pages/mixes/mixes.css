@@ -8,40 +8,44 @@
   src: url("../../assets/fonts/Nexa\ Bold.otf");
 }
 
-.mixesSection {
-  position: relative;
-  top: 50px;
-  height: 100vh;
+.mixesWrapper {
+  height: 120vh;
+  margin: 50px;
+}
+
+.mixesTitle {
+  text-align: center;
+  color: white;
+  font-family: Flange BQ Italic;
+  font-size: 60px;
+  margin-top: 40px;
 }
 
 .mixHeaders {
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.mixesTitle {
-  text-align: center;
-  margin-top: 30px;
-  /* padding-top: 30px; */
-  font-family: Flange BQ Italic;
-  font-size: 60px;
-  color: white;
+.beforeMixes,
+.afterMixes {
+  width: 50%;
+  display: inline-block;
 }
 
-.mixWrapper {
+/* .mixesWrapper {
   height: 80vh;
   width: 90vw;
   /* display: flex; */
-  /* flex-wrap: nowrap; */
+/* flex-wrap: nowrap;
   overflow-x: hidden;
   align-items: center;
   justify-content: center;
   margin-right: 5vw;
   margin-left: 5vw;
-}
+} */
 
-.mixWrapper::-webkit-scrollbar {
+/* .mixWrapper::-webkit-scrollbar {
   display: none;
 }
 
@@ -105,31 +109,31 @@
 }
 
 /* Progress Bar - Safari */
-.progressBar::-webkit-slider-runnable-track {
+/* .progressBar::-webkit-slider-runnable-track {
   background: red;
   border-radius: 10px;
   position: relative;
   width: 300px;
   height: 7px;
   outline: none;
-}
+} */
 
 /* Progress Bar- Firefox */
-.progressBar::-moz-range-track {
+/* .progressBar::-moz-range-track {
   background: red;
   border-radius: 10px;
   position: relative;
   width: 300px;
   height: 7px;
   outline: none;
-}
+} */
 
-.progressBar::-moz-focus-outer {
+/* .progressBar::-moz-focus-outer {
   border: 0;
-}
+} */
 
 /* Progress Bar - Chrome */
-.progressBar::before {
+/* .progressBar::before {
   content: "";
   height: 7px;
   width: 300px;
@@ -141,18 +145,18 @@
   left: 0;
   z-index: 2;
   cursor: pointer;
-}
+} */
 
 /* Progress Bar - Firefox */
-.progressBar::-moz-range-progress {
+/* .progressBar::-moz-range-progress {
   background-color: red;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 7px;
-}
+} */
 
 /* Knob - Chrome/Safari + */
-.progressBar::-webkit-slider-thumb {
+/* .progressBar::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 15px;
   width: 15px;
@@ -164,15 +168,15 @@
   margin: -4px 0 0 0;
   z-index: 3;
   box-sizing: border-box;
-}
+} */
 
-.progressBar:active::-webkit-slider-thumb {
+/* .progressBar:active::-webkit-slider-thumb {
   transform: scale(1.2);
   background: blue;
-}
+} */
 
 /* Knob - Firefox */
-.progressBar::-moz-range-thumb {
+/* .progressBar::-moz-range-thumb {
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -182,9 +186,9 @@
   position: relative;
   z-index: 3;
   box-sizing: border-box;
-}
+} */
 
-.progressBar:active::-moz-range-thumb {
+/* .progressBar:active::-moz-range-thumb {
   transform: scale(1.2);
   background: blue;
 }
@@ -197,4 +201,4 @@
 .afterMixes {
   display: inline-block;
   width: 50%;
-}
+} */

@@ -10,25 +10,20 @@
 
 .companyBioWrapper {
   text-align: center;
-  margin-top: 20px;
-  background-color: rgb(255, 255, 255, 0.15);
-  margin-left: 30px;
-  margin-right: 30px;
   border-radius: 20px;
-  padding-bottom: 20px;
+  background-color: rgb(0, 0, 0, 0.7);
   margin-bottom: 40px;
 }
 .companyBioTitle {
   color: white;
   font-family: Flange BQ Italic;
   font-size: 60px;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .companyBioText {
   color: white;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 40px;
+  margin: 30px;
   font-family: Nexa Bold;
+  padding-bottom: 30px;
 }
