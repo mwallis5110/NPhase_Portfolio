@@ -10,3 +10,17 @@
 .rightSideNav {
   float: right;
 }
+
+@media screen and (max-width: 625px) {
+  .rightSideNav {
+    margin-top: 130px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .rightSideNav {
+    margin-top: 40px;
+  }
+}

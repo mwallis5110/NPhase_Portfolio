@@ -8,9 +8,9 @@ import "./socialIcons.css";
 export default function SocialIcons() {
   return (
     <div className="socialIcons">
-      {/* <a href="" target="_blank" rel="noreferrer"> */}
-      <SiItunes className="iTunesIcon" />
-      {/* </a> */}
+      <a href="" target="_blank" rel="noreferrer">
+        <SiItunes className="iTunesIcon" />
+      </a>
       <a
         href="https://www.instagram.com/Nphaserecords/?hl=en"
         target="_blank"

@@ -12,7 +12,7 @@ import "./mixes.css";
 
 export default function Mixes() {
   return (
-    <div id="mixessId" className="mixesWrapper">
+    <div id="mixesId" className="mixesWrapper">
       <h1 className="mixesTitle">Mixes</h1>
       <div className="mixHeaders">
         <h5 className="beforeHeader">Before</h5>

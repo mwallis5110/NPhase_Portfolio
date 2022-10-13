@@ -15,3 +15,38 @@
   color: white;
   cursor: pointer;
 }
+
+@media screen and (max-width: 625px) {
+  .socialIcons {
+    padding-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .instagramIcon,
+  .iTunesIcon,
+  .twitterIcon {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .socialIcons {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .instagramIcon,
+  .iTunesIcon,
+  .twitterIcon {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    padding-right: 10%;
+    padding-left: 80%;
+  }
+}
