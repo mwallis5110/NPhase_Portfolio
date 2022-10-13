@@ -20,14 +20,6 @@ export default function PagesDropdown() {
           id="navLogo"
           src={NavLogo}
           alt="Nav bar logo, takes user to top of page"
-          onClick={
-            dropdown
-              ? () => {
-                  const anchor = document.querySelector("#firstPage");
-                  anchor.scrollIntoView({ behavior: "smooth", block: "start" });
-                }
-              : null
-          }
         />
         <IoMenuOutline className={`${dropdown ? "noshow " : "menuIcon"}`} />
       </button>

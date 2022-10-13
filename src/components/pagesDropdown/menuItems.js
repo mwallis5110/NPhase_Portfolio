@@ -1,5 +1,9 @@
 export const menuItems = [
   {
+    title: "First Page",
+    anchor: "#firstPage"
+  },
+  {
     title: "Beats",
     anchor: "#beatsId",
   },
