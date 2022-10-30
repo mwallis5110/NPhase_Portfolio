@@ -8,7 +8,7 @@ export default function Beats() {
       <h1 className="beatsTitle">Beats</h1>
       <div className="airbitPlaceholder">
         <h2>Airbit Placeholder</h2>
-        <h3> Todo: Import Airbit, center, style, make responsive</h3>
+        <h3> Todo: Import Airbit, style, make responsive</h3>
       </div>
     </div>
   );

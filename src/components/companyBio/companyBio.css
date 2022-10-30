@@ -12,18 +12,18 @@
   text-align: center;
   border-radius: 20px;
   background-color: rgb(0, 0, 0, 0.7);
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 .companyBioTitle {
   color: white;
   font-family: Flange BQ Italic;
   font-size: 60px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 .companyBioText {
   color: white;
-  margin: 30px;
+  /* margin: 30px; */
   font-family: Nexa Bold;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
