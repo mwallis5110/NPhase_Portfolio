@@ -9,20 +9,23 @@
 }
 
 .contactWrapper {
-  background-color: black;
+  background-color: orange;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactTitle {
   text-align: center;
   font-family: Flange BQ Italic;
-  font-size: 60px;
+  font-size: 90px;
   color: #e30613;
   padding-top: 40px;
 }
 
 .socialComponent {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
@@ -32,11 +35,12 @@
 
 .contactForm {
   background: rgb(255, 255, 255, 0.1);
+  width: 40vh;
+  height: 40vh;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 500px;
   padding: 30px 50px;
 }
 
@@ -64,4 +68,10 @@
   border-radius: 10px;
   font-size: 25px;
   font-family: Nexa Bold;
+}
+
+@media screen and (max-width: 1600px) {
+  .contactTitle {
+    font-size: 60px;
+  }
 }

@@ -32,7 +32,7 @@ export default function Contact() {
           console.log(error.text);
           Swal.fire({
             title: "Error",
-            text: "An error occurred when sending the message. Please email us at **Email address** instead",
+            text: "An error occurred when sending the message. Please email us at Nphaseatx@gmail.com instead",
           });
         }
       );

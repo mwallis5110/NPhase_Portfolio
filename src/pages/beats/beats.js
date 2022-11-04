@@ -7,8 +7,15 @@ export default function Beats() {
     <div className="beatsWrapper" id="beatsId">
       <h1 className="beatsTitle">Beats</h1>
       <div className="airbitPlaceholder">
-        <h2>Airbit Placeholder</h2>
-        <h3> Todo: Import Airbit, style, make responsive</h3>
+        <iframe
+          id="mfs_html5"
+          title="Beats"
+          src="https://airbit.com/widgets/html5/?uid=670189&config=1365428"
+          width="750"
+          height="510"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
       </div>
     </div>
   );

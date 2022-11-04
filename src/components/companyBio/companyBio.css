@@ -11,19 +11,29 @@
 .companyBioWrapper {
   text-align: center;
   border-radius: 20px;
-  background-color: rgb(0, 0, 0, 0.7);
-  /* margin-bottom: 40px; */
+  background-color: rgb(0, 0, 0, 0.85);
+  margin-bottom: 5px;
 }
 .companyBioTitle {
   color: white;
   font-family: Flange BQ Italic;
-  font-size: 60px;
-  /* padding-top: 30px; */
+  font-size: 90px;
 }
 
 .companyBioText {
   color: white;
-  /* margin: 30px; */
   font-family: Nexa Bold;
-  /* padding-bottom: 30px; */
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+  .companyBioTitle {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .companyBioText {
+    font-size: 20px;
+  }
 }
