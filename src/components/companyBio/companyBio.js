@@ -3,19 +3,24 @@ import React from "react";
 import "./companyBio.css";
 
 export default function CompanyBio() {
-
   return (
     <div className="companyBioWrapper">
       <h1 className="companyBioTitle">Who We Are</h1>
       <h3 className="companyBioText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        ligula leo, volutpat ac ligula sed, pretium efficitur ex. Phasellus
-        finibus laoreet est at pharetra. Praesent cursus est vel efficitur
-        volutpat. Quisque porttitor efficitur hendrerit. Nam a ullamcorper
-        dolor. Vestibulum nisl nibh, congue quis magna nec, placerat ultrices
-        dolor. Integer sed nulla vel arcu laoreet tempus. Donec elit est,
-        commodo a odio vitae, pharetra rutrum ligula. Ut vitae felis ac elit
-        tristique mattis non eu ipsum. Nulla cursus tempor sapien id tincidunt.
+        NPhase is an audio engineering collective of like-minded music producers
+        and audio engineers, founded in Austin, TX. The collective works within
+        several genres and mediums, providing artists with the resources to
+        complete high quality audio projects.
+        <br />
+        <br />
+        With over 20 years of combined production experience and certifications,
+        NPhase members believe that great music is built on the foundation of
+        good composition. We have aligned our individual goals as a collective,
+        to build a body of work that is professional, enjoyable and equitable.
+        <br />
+        <br />
+        We hope to share our commitment to strong technique, musical knowledge,
+        and creativity in collaboration with other artists and creators.
       </h3>
     </div>
   );

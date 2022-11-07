@@ -10,7 +10,7 @@ export default function AboutUs() {
   return (
     <div className="aboutUsWrapper" id="aboutUsId">
       <CompanyBio />
-      <Products />
+      {/* <Products /> */}
     </div>
   );
 }

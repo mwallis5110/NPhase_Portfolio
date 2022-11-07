@@ -11,19 +11,21 @@
 .companyBioWrapper {
   text-align: center;
   border-radius: 20px;
-  background-color: rgb(0, 0, 0, 0.85);
+  background-color: rgb(255, 255, 255, 0.85);
   margin-bottom: 5px;
 }
 .companyBioTitle {
-  color: white;
+  color: black;
   font-family: Flange BQ Italic;
   font-size: 90px;
+  padding-top: 10px;
 }
 
 .companyBioText {
-  color: white;
+  color: black;
   font-family: Nexa Bold;
-  font-size: 30px;
+  font-size: 25px;
+  padding: 15px;
 }
 
 @media screen and (max-width: 1600px) {
