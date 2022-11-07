@@ -44,7 +44,18 @@ export default function Contact() {
       <div className="socialComponent">
         <SocialIcons />
       </div>
+
       <div className="formWrapper">
+        <h4 className="contactText">
+          Interested in collaborating with NPhase Records?
+        </h4>
+        <h4 className="contactText">
+          Let us know what you`re working on, how far along you are, and what
+          services you think you may need.
+        </h4>
+        <h4 className="contactText">
+          We`ll contact you within 72 hours to begin our consultation process.
+        </h4>
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
           <input
             id="name"

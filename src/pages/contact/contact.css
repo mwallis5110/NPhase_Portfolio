@@ -10,9 +10,9 @@
 
 .contactWrapper {
   background-color: orange;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .contactTitle {
@@ -20,7 +20,7 @@
   font-family: Flange BQ Italic;
   font-size: 90px;
   color: #e30613;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .socialComponent {
@@ -29,12 +29,18 @@
   justify-content: center;
 }
 
+.contactText {
+  font-size: 20px;
+  font-family: Nexa Bold;
+}
+
 .formWrapper {
   margin-top: 20px;
+  text-align: center;
 }
 
 .contactForm {
-  background: rgb(255, 255, 255, 0.1);
+  background: rgb(255, 255, 255, 0.2);
   width: 40vh;
   height: 40vh;
   border-radius: 5px;
@@ -73,5 +79,17 @@
 @media screen and (max-width: 1600px) {
   .contactTitle {
     font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contactForm {
+    padding: 5%;
+  }
+
+  #name,
+  #email,
+  #message {
+    margin: 5%;
   }
 }

@@ -36,7 +36,7 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
             currentImage > 0 && setCurrentImage(currentImage - 1);
           }}
         >
-          <IoIosArrowBack />
+          <IoIosArrowBack className="arrowButton" />
         </div>
         <div className="center">
           <h1 className="title">{ServicesImageArray[currentImage].title}</h1>
@@ -51,7 +51,7 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
               setCurrentImage(currentImage + 1);
           }}
         >
-          <IoIosArrowForward />
+          <IoIosArrowForward className="arrowButton" />
         </div>
       </div>
     </div>
