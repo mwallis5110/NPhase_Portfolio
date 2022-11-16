@@ -1,5 +1,4 @@
 import React from "react";
-import Player from "react-material-music-player";
 
 import "./mixesComponent.css";
 
