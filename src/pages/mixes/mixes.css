@@ -8,10 +8,9 @@
   src: url("../../assets/fonts/Nexa\ Bold.otf");
 }
 
-/* .mixesWrapper {
-  margin: 50px;
+.mixesPageWrapper {
   margin-bottom: 100px;
-} */
+}
 
 .mixesTitle {
   text-align: center;
@@ -21,22 +20,10 @@
   margin-top: 40px;
 }
 
-.beforeHeader,
-.afterHeader {
+.beforeTitle,
+.afterTitle {
   color: white;
   display: flex;
   justify-content: center;
-  font-size: 30px;
   font-family: Nexa Bold;
-}
-
-.eachMix {
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: gray;
-  opacity: 0.9;
-}
-
-.eachMix:hover {
-  opacity: 0.75;
 }

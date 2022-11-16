@@ -41,7 +41,10 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
         <div className="center">
           <h1 className="title">{ServicesImageArray[currentImage].title}</h1>
           <h3 className="subTitle">
-            {ServicesImageArray[currentImage].subtitle}
+            {ServicesImageArray[currentImage].subtitle1}
+            <br />
+            <br />
+            {ServicesImageArray[currentImage].subtitle2}
           </h3>
         </div>
         <div
