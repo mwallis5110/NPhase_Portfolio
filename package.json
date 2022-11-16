@@ -1,7 +1,7 @@
 {
+  "homepage": "https://mwallis5110.github.io/NPhase_Records",
   "name": "nphase-records",
   "version": "0.1.0",
-  "homepage": "https://mwallis5110.github.io/NPhase_Records",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
