@@ -20,10 +20,10 @@
   margin-top: 40px;
 }
 
-.beforeTitle,
-.afterTitle {
+.mixesSubtitle {
   color: white;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
   font-family: Nexa Bold;
 }

@@ -42,7 +42,7 @@
 .contactForm {
   background: rgb(255, 255, 255, 0.2);
   width: 40vh;
-  height: 40vh;
+  /* height: 40vh; */
   border-radius: 5px;
   display: flex;
   flex-direction: column;

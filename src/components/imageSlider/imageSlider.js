@@ -39,7 +39,7 @@ export default function ImageSlider({ autoPlayTime = 6500 }) {
           <IoIosArrowBack className="arrowButton" />
         </div>
         <div className="center">
-          <h1 className="title">{ServicesImageArray[currentImage].title}</h1>
+          <h3 className="title">{ServicesImageArray[currentImage].title}</h3>
           <h3 className="subTitle">
             {ServicesImageArray[currentImage].subtitle1}
             <br />

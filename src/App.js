@@ -14,35 +14,35 @@ import "./App.css";
 
 export default function App() {
   // Determines whether page is loading, then returns either loading screen or first page
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 2000);
+  // }, []);
 
   return (
     <>
-      {loading === false ? (
-        <div className="App">
-          <video muted autoPlay loop id="mainVideo">
-            <source
-              src={LogoBackground}
-              type="video/mp4"
-              alt="Background animation of logo"
-            />
-          </video>
-          <div className="pages" id="pages">
-            <FirstPage />
-            <Beats />
-            <Mixes />
-            <Services />
-            <AboutUs />
-            <Contact />
-          </div>
+      {/* {loading === false ? ( */}
+      <div className="App">
+        <video muted autoPlay loop id="mainVideo">
+          <source
+            src={LogoBackground}
+            type="video/mp4"
+            alt="Background animation of logo"
+          />
+        </video>
+        <div className="pages" id="pages">
+          <FirstPage />
+          <Beats />
+          <Mixes />
+          <Services />
+          <AboutUs />
+          <Contact />
         </div>
-      ) : (
+      </div>
+      {/* ) : (
         <LoadingScreen />
-      )}
+      )} */}
     </>
   );
 }

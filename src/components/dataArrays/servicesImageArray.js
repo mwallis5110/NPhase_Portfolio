@@ -16,7 +16,7 @@ export const ServicesImageArray = [
   {
     img: Mixing,
     alt: "Mixing services",
-    title: "Mixing and Mastering",
+    title: "Mixing & Mastering",
     subtitle1:
       "NPhase provides final mixing and mastering services, using Soundtoys 5, Fabfilter Suite, and Gulfoss EQ.",
     subtitle2:
