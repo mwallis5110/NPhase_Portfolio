@@ -25,11 +25,6 @@ import MixesArray from "../../components/dataArrays/mixesArray";
 import "./mixes.css";
 
 export default function Mixes() {
-  const [currentTrack, setCurrentTrack] = useState("");
-  const audioPlayer = useRef();
-
-  const togglePlay = () => {};
-
   const PSlider = styled(Slider)(({ theme, ...props }) => ({
     color: "silver",
     hover: {
@@ -75,9 +70,7 @@ export default function Mixes() {
                 display: "flex",
               }}
             >
-              <audio src={mix.track} autoPlay ref={audioPlayer} />
               <PlayArrow
-                onClick={setCurrentTrack(`mixesArray.${mix.id}`)}
                 sx={{
                   color: "silver",
                   marginLeft: "3%",
@@ -125,7 +118,7 @@ export default function Mixes() {
               sx={{
                 height: "70px",
                 background: "linear-gradient(#070707, #323236)",
-                marginBottom: "20px",
+                marginBottom: "15px",
                 borderRadius: "10px",
                 alignItems: "center",
                 opacity: 0.9,
@@ -139,7 +132,7 @@ export default function Mixes() {
                   marginRight: "3%",
                   fontSize: "40px",
                   minWidth: "50px",
-                  "&hover": { color: "white" },
+                  "&:hover": { color: "white", cursor: "pointer" },
                 }}
               />
               <Typography
@@ -163,11 +156,11 @@ export default function Mixes() {
                   width: "90%",
                 }}
               >
-                <Typography sx={{ color: "silver", marginRight: "2%" }}>
+                <Typography sx={{ color: "silver", marginRight: "3%" }}>
                   0:00
                 </Typography>
-                <Slider />
-                <Typography sx={{ color: "silver", marginLeft: "2%" }}>
+                <PSlider />
+                <Typography sx={{ color: "silver", marginLeft: "3%" }}>
                   0:00
                 </Typography>
               </Stack>
@@ -175,9 +168,6 @@ export default function Mixes() {
           ))}
         </Grid>
       </Grid>
-      <Box>
-        <Stack></Stack>
-      </Box>
     </Container>
   );
 }
