@@ -11,14 +11,7 @@ import {
   Container,
 } from "@mui/material";
 
-import {
-  VolumeDown,
-  VolumeUp,
-  VolumeOff,
-  VolumeMute,
-  Pause,
-  PlayArrow,
-} from "@mui/icons-material";
+import { Pause, PlayArrow, SkipNext, SkipPrevious } from "@mui/icons-material";
 
 import MixesArray from "../../components/dataArrays/mixesArray";
 
@@ -70,43 +63,36 @@ export default function Mixes() {
                 display: "flex",
               }}
             >
-              <PlayArrow
-                sx={{
-                  color: "silver",
-                  marginLeft: "3%",
-                  marginRight: "3%",
-                  fontSize: "40px",
-                  minWidth: "50px",
-                  "&:hover": { color: "white", cursor: "pointer" },
-                }}
-              />
-              <Typography
-                sx={{
-                  color: "white",
-                  fontSize: "20px",
-                  width: "8%",
-                  minWidth: "100px",
-                }}
-              >
-                {mix.title}
-              </Typography>
               <Stack
                 direction="row"
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  marginLeft: "3%",
-                  marginRight: "3%",
-                  justifyContent: "center",
-                  width: "90%",
+                  width: "100%",
+                  justifyContent: "align-left",
                 }}
               >
-                <Typography sx={{ color: "silver", marginRight: "3%" }}>
-                  0:00
-                </Typography>
-                <PSlider />
-                <Typography sx={{ color: "silver", marginLeft: "3%" }}>
-                  0:00
+                <PlayArrow
+                  sx={{
+                    color: "silver",
+                    justifyContent: "left",
+                    marginLeft: "5%",
+                    fontSize: "40px",
+                    minWidth: "50px",
+                    "&:hover": { color: "white", cursor: "pointer" },
+                  }}
+                />
+                <Typography
+                  sx={{
+                    color: "white",
+                    fontSize: "30px",
+                    minWidth: "100px",
+                    justifyContent: "center",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
+                  {mix.title}
                 </Typography>
               </Stack>
             </Box>
@@ -145,29 +131,79 @@ export default function Mixes() {
               >
                 {mix.title}
               </Typography>
-              <Stack
-                direction="row"
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  marginLeft: "3%",
-                  marginRight: "3%",
-                  justifyContent: "center",
-                  width: "90%",
-                }}
-              >
-                <Typography sx={{ color: "silver", marginRight: "3%" }}>
-                  0:00
-                </Typography>
-                <PSlider />
-                <Typography sx={{ color: "silver", marginLeft: "3%" }}>
-                  0:00
-                </Typography>
-              </Stack>
             </Box>
           ))}
         </Grid>
       </Grid>
+      <Box
+        sx={{
+          height: "140px",
+          background: "linear-gradient(#070707, #323236)",
+          marginBottom: "15px",
+          borderRadius: "10px",
+          alignItems: "start",
+          justifyContent: "space-evenly",
+          opacity: 0.9,
+          display: "block",
+        }}
+      >
+        <Stack
+          direction="row"
+          sx={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            width: "100%",
+            alignItems: "center",
+          }}
+        >
+          <Typography sx={{ color: "white", fontSize: "40px" }}>
+            Song title
+          </Typography>
+          <Stack direction="row" spacing={3} sx={{ marginTop: "10px" }}>
+            <SkipPrevious
+              sx={{
+                color: "silver",
+                fontSize: "40px",
+                "&:hover": { color: "white", cursor: "pointer" },
+              }}
+            />
+            <PlayArrow
+              sx={{
+                color: "silver",
+                fontSize: "40px",
+                "&:hover": { color: "white", cursor: "pointer" },
+              }}
+            />
+            <SkipNext
+              sx={{
+                color: "silver",
+                fontSize: "40px",
+                "&:hover": { color: "white", cursor: "pointer" },
+              }}
+            />
+          </Stack>
+        </Stack>
+        <Stack
+          direction="row"
+          sx={{
+            display: "flex",
+            alignItems: "flex-end",
+            marginTop: "15px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            justifyContent: "center",
+            width: "90%",
+          }}
+        >
+          <Typography sx={{ color: "silver", marginRight: "3%" }}>
+            0:00
+          </Typography>
+          <PSlider />
+          <Typography sx={{ color: "silver", marginLeft: "3%" }}>
+            0:00
+          </Typography>
+        </Stack>
+      </Box>
     </Container>
   );
 }
