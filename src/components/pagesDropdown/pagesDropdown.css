@@ -47,7 +47,7 @@
 
 .menuIcon {
   display: inline-flex;
-  justify-content: end;
+  justify-content: flex-end;
   width: 80px;
   height: 80px;
   color: white;

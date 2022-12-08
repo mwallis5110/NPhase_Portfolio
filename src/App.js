@@ -13,7 +13,6 @@ import LogoBackground from "./assets/nphaseLogoAnimation.mp4";
 import "./App.css";
 
 export default function App() {
-  // Determines whether page is loading, then returns either loading screen or first page
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
