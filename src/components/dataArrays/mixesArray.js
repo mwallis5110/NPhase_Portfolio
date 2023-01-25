@@ -12,52 +12,52 @@ import Track10 from "../../assets/wavFiles/preamble10.wav";
 export const MixesBeforeArray = [
   {
     id: 1,
-    title: "Track 1",
+    title: "Track 1 (Before)",
     track: Track1,
   },
   {
     id: 2,
-    title: "Track 2",
+    title: "Track 1 (After)",
     track: Track2,
   },
   {
     id: 3,
-    title: "Track 3",
+    title: "Track 2 (Before)",
     track: Track3,
   },
   {
     id: 4,
-    title: "Track 4",
+    title: "Track 2 (After)",
     track: Track4,
   },
   {
     id: 5,
-    title: "Track 5",
+    title: "Track 3 (Before)",
     track: Track5,
   },
   {
     id: 6,
-    title: "Track 6",
+    title: "Track 3 (After)",
     track: Track6,
   },
   {
     id: 7,
-    title: "Track 7",
+    title: "Track 4 (Before)",
     track: Track7,
   },
   {
     id: 8,
-    title: "Track 8",
+    title: "Track 4 (After)",
     track: Track8,
   },
   {
     id: 9,
-    title: "Track 9",
+    title: "Track 5 (Before)",
     track: Track9,
   },
   {
     id: 10,
-    title: "Track 10",
+    title: "Track 5 (After)",
     track: Track10,
   },
 ];
