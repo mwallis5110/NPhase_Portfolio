@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import {
   Typography,
@@ -11,7 +11,6 @@ import {
 
 import MixesArray from "../../components/dataArrays/mixesArray";
 import { FaPlay, FaPause } from "react-icons/fa";
-import song from "../../assets/wavFiles/preamble10.wav";
 import "./mixes.css";
 import { Box } from "@mui/system";
 
@@ -33,34 +32,49 @@ export default function Mixes() {
     setIsPlaying(!isPlaying);
   };
 
+  const calculateCurrentTime = () => {
+    let minutes = Math.floor(audioRef.current.currentTime / 60);
+    let extraSeconds = audioRef.current.currentTime % 60;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    extraSeconds =
+      extraSeconds < 10
+        ? "0" + Math.round(extraSeconds)
+        : Math.round(extraSeconds);
+    return minutes + ":" + extraSeconds;
+  };
+
+  const calculateEndTime = () => {
+    let minutes = Math.floor(audioRef.current.duration / 60);
+    let extraSeconds = audioRef.current.duration % 60;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    extraSeconds =
+      extraSeconds < 10
+        ? "0" + Math.round(extraSeconds)
+        : Math.round(extraSeconds);
+    return minutes + ":" + extraSeconds;
+  };
+
   const handleTrackChange = (index) => {
     console.log("handleTrackChange");
     setCurrentTrackIndex(index);
 
-    //console.log("??", audioRef.current.paused);
     audioRef.current.pause();
     audioRef.current = new Audio(MixesArray[index].track);
     audioRef.current.play();
-    //.paused
 
-    console.log(audioRef, audioRef.current);
+    setIsPlaying(!isPlaying);
 
-    //
-
-    setIsPlaying(false);
-  };
-
-  const handleTimeUpdate = () => {
-    console.log("handle time update");
-    const { currentTime, duration } = audioRef.current;
-    setProgress(currentTime / duration);
+    audioRef.current.addEventListener("timeupdate", (e) => {
+      const { currentTime, duration } = audioRef.current;
+      console.log("time update", currentTime / duration);
+      setProgress(currentTime / duration);
+    });
   };
 
   const handleSeek = (e) => {
     audioRef.current.currentTime = e.target.value * audioRef.current.duration;
     setProgress(e.target.value);
   };
-  console.log("progress:", progress, audioRef.current.currentTime);
 
   return (
     <Container
@@ -147,14 +161,6 @@ export default function Mixes() {
             paddingTop: "15px",
           }}
         >
-          <audio
-            ref={audioRef}
-            controls
-            ontimeupdate={handleTimeUpdate}
-            onEnded={() =>
-              handleTrackChange((currentTrackIndex + 1) % MixesArray.length)
-            }
-          />
           <Button
             onClick={togglePlay}
             sx={{ color: "#e30613", fontSize: "30px" }}
@@ -163,7 +169,7 @@ export default function Mixes() {
           </Button>
 
           <Typography sx={{ color: "white", fontSize: "20px" }}>
-            0:00
+            {audioRef.current.duration ? `${calculateCurrentTime()}` : "0:00"}
           </Typography>
           <Slider
             min={0}
@@ -171,7 +177,7 @@ export default function Mixes() {
             step={0.01}
             value={progress}
             onChange={handleSeek}
-            valueLabelDisplay="auto"
+            // valueLabelDisplay="auto"
             sx={{
               width: "90%",
               display: "flex",
@@ -179,9 +185,7 @@ export default function Mixes() {
             }}
           />
           <Typography sx={{ color: "white", fontSize: "20px" }}>
-            {audioRef.current.duration
-              ? audioRef.current.duration.toFixed(2)
-              : "0:00"}
+            {audioRef.current.duration ? `${calculateEndTime()}` : "0:00"}
           </Typography>
         </Stack>
         <Typography
@@ -193,7 +197,7 @@ export default function Mixes() {
             display: "flex",
           }}
         >
-          {MixesArray[currentTrackIndex].title ?? "No Track Selected"}
+          {MixesArray[currentTrackIndex].title}
         </Typography>
       </Box>
     </Container>
