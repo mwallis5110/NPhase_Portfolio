@@ -9,7 +9,7 @@ import Track8 from "../../assets/wavFiles/PinkPanther30.wav";
 import Track9 from "../../assets/wavFiles/PinkPanther60.wav";
 import Track10 from "../../assets/wavFiles/preamble10.wav";
 
-export const MixesBeforeArray = [
+export const MixesArray = [
   {
     id: 1,
     title: "Track 1 (Before)",
@@ -62,4 +62,4 @@ export const MixesBeforeArray = [
   },
 ];
 
-export default MixesBeforeArray;
+export default MixesArray;

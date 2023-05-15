@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import FirstPage from "./pages/firstPage/firstPage.js";
 import Beats from "./pages/beats/beats.js";
@@ -7,6 +7,7 @@ import Services from "./pages/services/services.js";
 import AboutUs from "./pages/aboutUs/aboutUs.js";
 import Contact from "./pages/contact/contact.js";
 
+import LoadingScreen from "./components/loading/loading.js";
 import LogoBackground from "./assets/nphaseLogoAnimation.mp4";
 
 import "./App.css";
@@ -19,47 +20,28 @@ export default function App() {
   // }, []);
 
   return (
-    <div className="App">
-      <video muted autoPlay loop id="mainVideo">
-        <source
-          src={LogoBackground}
-          type="video/mp4"
-          alt="Background animation of logo"
-        />
-      </video>
-      <div className="pages" id="pages">
-        <FirstPage />
-        <Beats />
-        <Mixes />
-        <Services />
-        <AboutUs />
-        <Contact />
-      </div>
-    </div>
+    <>
+      {/* {loading === false ? ( */}
+        <div className="App">
+          <video muted autoPlay loop id="mainVideo">
+            <source
+              src={LogoBackground}
+              type="video/mp4"
+              alt="Background animation of logo"
+            />
+          </video>
+          <div className="pages" id="pages">
+            <FirstPage />
+            <Beats />
+            <Mixes />
+            <Services />
+            <AboutUs />
+            <Contact />
+          </div>
+        </div>
+      {/* ) : (
+        <LoadingScreen />
+      )} */}
+    </>
   );
 }
-
-// return (
-//     <>
-//       {loading === false ? (
-//         <div className="App">
-//           <video muted autoPlay loop id="mainVideo">
-//             <source
-//               src={LogoBackground}
-//               type="video/mp4"
-//               alt="Background animation of logo"
-//             />
-//           </video>
-//           <div className="pages" id="pages">
-//             <FirstPage />
-//             <Beats />
-//             <Mixes />
-//             <Services />
-//             <AboutUs />
-//             <Contact />
-//           </div>
-//         </div>
-//       ) : (
-//         <LoadingScreen />
-//       )}
-//     </>
