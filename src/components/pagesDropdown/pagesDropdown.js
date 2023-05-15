@@ -9,12 +9,15 @@ import "./pagesDropdown.css";
 export default function PagesDropdown() {
   const [dropdown, setDropdown] = useState(false);
   return (
-    <div className="pagesDropdown">
+    <div
+      className="pagesDropdown"
+      onClick={() => setDropdown(true)}
+      onMouseLeave={() => setDropdown(false)}
+    >
       <button
         className={`${dropdown ? "expandedDropdownButton" : "dropdownButton"}`}
         href="/"
         aria-expanded={dropdown ? "true" : "false"}
-        onClick={() => setDropdown((prev) => !prev)}
       >
         <img
           id="navLogo"
