@@ -21,12 +21,9 @@ export default function Mixes() {
   const [progress, setProgress] = useState(0);
 
   const togglePlay = () => {
-    console.log("isPlaying", isPlaying);
     if (isPlaying) {
-      console.log("pause");
       audioRef.current.pause();
     } else {
-      console.log("play");
       audioRef.current.play();
     }
     setIsPlaying(!isPlaying);
@@ -55,20 +52,20 @@ export default function Mixes() {
   };
 
   const handleTrackChange = (index) => {
-    console.log("handleTrackChange");
     setCurrentTrackIndex(index);
 
     audioRef.current.pause();
+    setIsPlaying(false);
     audioRef.current = new Audio(MixesArray[index].track);
     audioRef.current.play();
-
-    setIsPlaying(!isPlaying);
+    setIsPlaying(true);
 
     audioRef.current.addEventListener("timeupdate", (e) => {
       const { currentTime, duration } = audioRef.current;
-      console.log("time update", currentTime / duration);
       setProgress(currentTime / duration);
     });
+
+    console.log("isPlaying", isPlaying, audioRef.current.play());
   };
 
   const handleSeek = (e) => {
@@ -177,7 +174,6 @@ export default function Mixes() {
             step={0.01}
             value={progress}
             onChange={handleSeek}
-            // valueLabelDisplay="auto"
             sx={{
               width: "90%",
               display: "flex",
