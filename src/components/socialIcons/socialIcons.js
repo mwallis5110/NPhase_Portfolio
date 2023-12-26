@@ -1,29 +1,41 @@
 import React from "react";
 
-import { SiItunes } from "react-icons/si";
-import { BsTwitter } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
+import AppleMusic from "../../assets/socialIcons/appleMusic.png";
+import Instagram from "../../assets/socialIcons/instagram.png";
+import Soundcloud from "../../assets/socialIcons/soundcloud.png";
+import Spotify from "../../assets/socialIcons/spotify.png";
+import Tidal from "../../assets/socialIcons/tidal.png";
+import TikTok from "../../assets/socialIcons/tiktok.png";
+import YouTubeMusic from "../../assets/socialIcons/youtubeMusic.png";
 import "./socialIcons.css";
 
 export default function SocialIcons() {
   return (
     <div className="socialIcons">
       <a href="" target="_blank" rel="noreferrer">
-        <SiItunes className="iTunesIcon" />
+        <img className="iconButton" src={AppleMusic} alt="Apple Music icon" />
       </a>
-      <a
-        href="https://www.instagram.com/Nphaserecords/?hl=en"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <BsInstagram className="instagramIcon" />
+      <a href="" target="_blank" rel="noreferrer">
+        <img className="iconButton" src={Instagram} alt="Instagram icon" />
       </a>
-      <a
-        href="https://twitter.com/nphaserecords"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <BsTwitter className="twitterIcon" />
+      <a href="" target="_blank" rel="noreferrer">
+        <img className="iconButton" src={Soundcloud} alt="Soundcloud icon" />
+      </a>
+      <a href="" target="_blank" rel="noreferrer">
+        <img className="iconButton" src={Spotify} alt="Spotify icon" />
+      </a>
+      <a href="" target="_blank" rel="noreferrer">
+        <img className="iconButton" src={Tidal} alt="Tidal icon" />
+      </a>
+      <a href="" target="_blank" rel="noreferrer">
+        <img className="iconButton" src={TikTok} alt="TikTok icon" />
+      </a>
+      <a href="" target="_blank" rel="noreferrer">
+        <img
+          className="iconButton"
+          src={YouTubeMusic}
+          alt="YoutTube Music icon"
+        />
       </a>
     </div>
   );
